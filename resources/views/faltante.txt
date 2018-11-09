@@ -1,0 +1,3 @@
+home
+	imagen de header con fondo gris
+	logo rojo de cabecera

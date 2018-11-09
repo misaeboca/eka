@@ -1,0 +1,691 @@
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    @media only screen and (min-width : 576px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        
+    }
+    @media only screen and (min-width : 1750px) {
+        
+    }
+    @media only screen and (min-width : 2100px) {
+        /*INDEX*/
+        #comofunciona > div > #comofunciona-title {
+            height: 100vh;
+        }
+        [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgb(35, 31, 32);
+        }
+        [type="checkbox"].filled-in:checked+span:not(.lever):after {
+            width: 50px;
+            height: 50px;
+            border: rgb(35, 31, 32) 3px solid;
+        }
+        [type="checkbox"].filled-in:checked+span:not(.lever):before {
+            top: 10px;
+            left: 10px;
+            width: 13px;
+            height: 22px;
+            border-right: 4px solid rgb(35, 31, 32);
+            border-bottom: 4px solid rgb(35, 31, 32);
+        }
+        section#descuentos > #descuentos_subtotal {
+            height: 15vh;
+            line-height: 16vh;
+        }
+        section#descuentos > #descuentos_descuento {
+            height: 15vh;
+            line-height: 16vh;
+        }
+        section#otras_opciones > .row > .col > .opcion {
+            height: 105vh;
+        }
+        /*SERVICIOS*/
+        section#jumbotron.servicio > p {
+            line-height: 5vh;
+        }
+        section.servicio#parallax > .parallax-container > .row > div > p {
+            line-height: 5vh;
+        }
+        section#otras_opciones.servicio > p {
+            line-height: 5vh;
+        }
+        /*PASOS*/
+        #steps > .step {
+            width: 2.5vw;
+            height: 7vh;
+            line-height: 7vh;
+            font-size: 1vw;
+        }
+        #form-paso-three > form > #total {
+            height: 35vh;
+        }
+    }
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 2000px) {
+
+    }
+    @media only screen and (max-width : 1600px) {
+        
+    }
+    @media only screen and (max-width : 1300px) {
+
+    }
+    @media only screen and (max-width : 1200px) {
+
+    }
+    @media only screen and (max-width : 1080px) {
+       
+
+    }
+    @media only screen and (max-width : 1024px) {
+        
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 992px) {
+        /*INDEX*/
+        nav > a > #nav-logo {
+            width: 20vw;
+        }
+        nav > #nav-info,
+        nav > #nav-links{
+            display: none;
+        }
+        nav > h3.title{
+            display: block;
+        }
+
+        section#jumbotron > h3{
+            display: block;
+        }
+        section#jumbotron > img{
+            display: none;
+        }
+        section#jumbotron > img#jumbotron-mobile{
+            display: block;
+        }
+
+        section#comofunciona {
+            margin: 0vh 0 0vh 0;
+            padding-bottom: 10vh;
+        }
+        #comofunciona > div > #comofunciona-title > h4{
+            display: none;
+        }
+        #comofunciona > div > #comofunciona-title > h4#title-mobile{
+            display: block;
+        }
+        #comofunciona > div > #comofunciona-title {
+            margin-bottom: 5vh;
+             height: inherit; 
+        }
+        #comofunciona > div > #comofunciona-info {
+            margin-bottom: 5vh;
+        }
+        .comofunciona-paso {
+            width: 80vw;
+            margin: auto;
+        }
+        .comofunciona-paso > div.comofunciona-paso-n > p {
+            font-size: 3vw;
+        }
+        .comofunciona-paso > div.comofunciona-paso-info {
+            width: 53vw;
+            margin-left: 10vw;
+            margin-right: 7vw;
+        }
+        .comofunciona-paso > div.comofunciona-paso-info > h5 {
+            font-size: 4vw;
+        }
+        .comofunciona-paso > div.comofunciona-paso-info > p {
+            font-size: 3vw;
+        }
+        .comofunciona-paso > div.comofunciona-paso-icono > img {
+            width: 7vw;
+        }
+        #comofunciona > div > a.btn-custom {
+            margin-top: 5vh;
+            width: 70vw;
+            font-size: 4vw;
+        }
+
+        section#descuentos {
+            padding-top: 10vh;
+        }
+        section#descuentos > h4 {
+            font-size: 5vw;
+            margin-bottom: 5vh;
+        }
+        section#descuentos > div > #descuentos-title {
+            float: inherit; 
+            width: 100%;
+            text-align: center;
+        }
+        section#descuentos > div > #descuentos-title > h5 {
+            font-size: 3vw;
+        }
+        section#descuentos > div > .vertical-divider {
+            display: none;
+        }
+        section#descuentos > div > #descuentos-descuentos {
+            float: inherit;
+            width: 100%;
+            text-align: center;
+            margin-top: 4vh;
+        }
+        section#descuentos > div > #descuentos-descuentos > h5 {
+            font-size: 3vw;
+        }
+        section#descuentos > #descuentos_arma-tu-plan,
+        section#descuentos > #descuentos_subtotal,
+        section#descuentos > #descuentos_descuento,
+        section#descuentos > #descuentos_total {
+            display: none;
+        }
+
+        section#otras_opciones {
+            padding-top: 5vh;
+            width: 70vw;
+        }
+        section#otras_opciones > h4 {
+            font-size: 4vw;
+            margin-bottom: 5vh;
+        }
+        section#otras_opciones > h5 {
+            display: none;
+        }
+        section#otras_opciones > .row > .col > .opcion {
+            height: 30vh;
+            margin-bottom: 5vh;
+        }
+        section#otras_opciones > .row > .col > .opcion > h5 {
+            font-size: 4vw;
+            margin-bottom: 1vh;
+        }
+        section#otras_opciones > .row > .col > .opcion > img {
+            display: none;
+        }
+        section#otras_opciones > .row > .col > .opcion > .btn-custom {
+            width: 30vw;
+            font-size: 4vw;
+            margin: 3vh auto;
+        }
+        section#otras_opciones > .row > .col > .opcion > h4 {
+            font-size: 4vw;
+        }
+        section#otras_opciones > .row > .col > .opcion-dos > .btn-custom {
+            margin: 3vh auto;
+        }
+        section#otras_opciones > .opcion-tres {
+            display: none;
+        }
+        section#otras_opciones > .row > .col > .opcion.mobile{
+            display: block;
+        }
+        section#otras_opciones > #especifico > h5,
+        section#otras_opciones > #especifico > h4,
+        section#otras_opciones > #especifico > a.btn-custom {
+            display: none;
+        }
+        section#otras_opciones > #especifico > a.btn-custom.mobile{
+            display: block;
+        }
+
+        footer.index {
+            background: rgb(35, 31, 32);
+        }
+        footer > #social-media {
+            text-align: center;
+            margin: 10vh auto 5vh;
+            padding-top: 5vh;
+            width: 100vw;
+        }
+        footer > #social-media > img {
+            content: url(../images/corona-blanca.svg);
+            width: 15vw;
+            margin-bottom: 2vh;
+        }
+        footer > #social-media > div > .col{
+            width: 100%;
+            color: #fff;
+        }
+        footer > #social-media > div > .col > a{
+            color: #fff;
+            font-size: 3vw;
+        }
+        footer > #social-media > h6 {
+            font-size: 4vw;
+            color: #fff;
+        }
+        footer > #info {
+            width: 90vw;
+            border-top: none;
+        }
+        footer > #info > h5 {
+            color: #fff;
+            font-size: 2.5vw;
+        }
+        footer > #info > p {
+            color: #fff;
+            font-size: 3vw;
+            padding-bottom: 5vh;
+            border-bottom: 1px solid #fff;
+        }
+        footer > #info > h4 {
+            color: #fff;
+            margin: 5vh 0 0;
+            font-size: 4vw;
+            font-weight: 700;
+        }
+        footer > #info > h3 {
+            display: none;
+        }
+        footer > #links > .row > .col {
+            width: 40vw;
+            text-align: center;
+        }
+        footer > #links > div > div > ul.link-list > .link-title > a {
+            color: #fff;
+            font-size: 3.5vw;
+            font-weight: 700;
+        }
+        footer > #links > div > div > ul.link-list > li > a {
+            color: #fff;
+            font-size: 3vw;
+        }
+
+        /*SERVICIOS*/
+        #jumbotron.servicio > h3.title{
+            font-weight: 800;
+            font-size: 4vw;
+            margin: 0 0 3vh;
+        }
+        section#jumbotron.servicio {
+            width: 90vw;
+            margin: 2vh auto 10vh;
+        }
+        section#jumbotron.servicio > h2 {
+            margin: 5vh 0 0;
+            font-size: 22vw;
+        }
+        section#jumbotron.servicio > h3 {
+            margin: 0 0 5vh;
+            font-size: 6vw;
+        }
+        section#jumbotron.servicio > img {
+            display: block;
+            margin: auto;
+            width: 70vw;
+        }
+        section#jumbotron.servicio > h4 {
+            font-size: 4vw;
+            margin: 0 0 3vh;
+        }
+        section#jumbotron.servicio > a.btn-custom {
+            width: 40vw;
+            font-size: 4vw;
+        }
+        section#jumbotron.servicio > p {
+            margin: 2vh 0 0;
+            font-size: 3.5vw;
+            line-height: 4vh;
+        }
+        section.servicio#parallax {
+            min-height: 65vh;
+            background: rgb(35, 31, 32);
+            text-align: center;
+            height: inherit;
+        }
+        section.servicio#parallax > .parallax-container > .row > div > h5 {
+            font-size: 4.5vw;
+            font-weight: 600;
+            margin-bottom: 0vh;
+        }
+        section.servicio#parallax > .parallax-container > .row > div > p {
+            font-size: 3.5vw;
+            font-weight: 400;
+            line-height: 4vh;
+            margin-bottom: 3vh;
+        }
+        section.servicio#parallax > .parallax-container > .row > div > img {
+            width: 7vw;
+            margin-bottom: 3vh;
+        }
+        section.servicio#parallax > .parallax-container > a.btn-custom {
+            display: none;
+        }
+        section#otras_opciones.servicio {
+            width: 90vw;
+        }
+        section#otras_opciones.servicio > h4 {
+            font-size: 4vw;
+            margin-bottom: 1vh;
+        }
+        section#otras_opciones.servicio > p {
+            margin-bottom: 5vh;
+            font-size: 3vw;
+            line-height: 3vh;
+        }
+        section#otras_opciones.servicio > #especifico > a.btn-custom {
+            width: 50vw;
+            font-size: 4vw;
+        }
+        /*PASOS*/
+        #steps {
+            text-align: center;
+            margin: 10vh auto 0vh;
+            width: 100%;
+        }
+        #steps > .step {
+            width: 9vw;
+            height: 5vh;
+            font-size: 4vw;
+            line-height: 5vh;
+        }
+        #steps > .step-divider {
+            width: 20vw;
+            height: 1px;
+        }
+        #steps > .step.one {
+            margin-left: -9vw;
+        }
+        #steps > .step.two {
+            margin-left: -4.5vw;
+        }
+        #steps > p {
+            font-size: 5vw;
+        }
+        form > #btns {
+            width: 70vw !important;
+        }
+        form > #btns > .row > .col > a.btn-custom{
+            font-size: 4vw;
+        }
+        form > #btns > .row > .col > button.btn-custom-btn{
+            font-size: 3.5vw;
+        }
+        /*PASO 1*/
+        #form-paso-one {
+            margin: 10vh auto 3vh;
+        }
+        .paso-input > h5 {
+            font-size: 5vw;
+        }
+        .paso-input > p {
+            font-size: 3.5vw;
+        }
+        #form-paso-one > form > #paraquien {
+            margin: 10vh 0;
+        }
+        #form-paso-one > form > #paraquien > h5 {
+            font-size: 5vw;
+        }
+        #form-paso-one > form > #paraquien > div > div {
+            margin-bottom: 5vh;
+        }
+        #form-paso-one > form > #paraquien > div > div > p {
+            font-size: 4vw;
+        }
+        .paso-inputs-checkboxes > p {
+            font-weight: 700;
+            font-size: 2.5vw;
+        }
+        .paso-inputs-checkboxes > input[type=text] {
+            width: 40vw;
+        }
+        /*PASO 2*/
+        #form-paso-two {
+            margin: 10vh auto 3vh;
+        }
+        .modal.paso_2 > .modal-content {
+            width: 70vw;
+        }
+        .modal.paso_2 > .modal-content > h5 {
+            font-size: 5vw;
+        }
+        .modal.paso_2 > .modal-footer > img {
+            width: 15vw;
+            margin-right: 5vw;
+        }
+        .paso-title > h5 {
+            font-size: 5vw;
+        }
+        .paso-title > p {
+            font-size: 4vw;
+        }
+        #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article {
+            padding: 3vh 5vw 0;
+            margin: 0 auto 10vh;
+            width: 55vw;
+            height: 65vh;
+        }
+        #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > img {
+            width: auto;
+            height: 21vh;
+        }
+        #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > h5 {
+            font-size: 4.9vw;
+            margin-bottom: 2vh;
+        }
+        #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > a {
+            font-size: 5vw;
+        }
+        #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > p {
+            font-weight: 600;
+            font-size: 8vw;
+            margin-top: 2vh;
+            margin-bottom: 1vh;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+        #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > p > input {
+            font-size: 6vw;
+        }
+        #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > .signo {
+            width: 8vw;
+            margin: 0 2vw;
+        }
+        #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > p {
+            font-size: 7vw;
+        }
+        #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > p > input {
+            width: 7vw;
+            font-size: 7vw;
+            padding-bottom: 1vh;
+        }
+        #form-paso-two > form > #paso-two-articles > .row {
+            margin-bottom: 0vh;
+        }
+        #form-paso-two > form > #btns {
+            margin: 5vh auto 0;
+        }
+        /*PASO 3*/
+        #form-paso-three {
+            margin: 10vh auto 3vh;
+        }
+        #form-paso-three > form > #plan-final > .plan-final-plan {
+            width: 60vw;
+            margin: 0 auto 5vh;
+            display: block;
+            padding-bottom: 3vh;
+            border-bottom: 1px solid;
+        }
+        #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > p {
+            font-size: 6vw;
+        }
+        #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad {
+            margin-top: 0vh;
+        }
+        #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > p {
+            font-weight: 500;
+            font-size: 5vw;
+            margin: 0;
+        }
+        #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > p {
+            font-size: 6vw;
+            margin-bottom: 1vh;
+            display: block;
+        }
+        #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > p > input{
+            font-size: 6vw;
+            margin-bottom: 1vh;
+            width: 5vw;
+        }
+        #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > a {
+            display: none;
+        }
+        #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > a {
+            font-size: 5vw;
+            text-decoration: underline;
+        }
+        #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > h5 {
+            font-size: 7vw;
+            margin-top: 5vh;
+        }
+        #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > h5 > input{
+            font-size: 7vw;
+        }
+        #form-paso-three > form > #subtotal {
+            width: 90vw;
+        }
+        #form-paso-three > form > #subtotal > div > div > h5 {
+            font-size: 3.5vw;
+        }
+        #form-paso-three > form > #subtotal > div > div > h5 > input{
+            font-size: 3.5vw;
+        }
+        #form-paso-three > form > #subtotal > div > div > p {
+            font-size: 3.5vw;
+        }
+        #form-paso-three > form > #subtotal > div > div > p > input{
+            font-size: 3.5vw;
+        }
+        #form-paso-three > form > #descuento {
+            width: 90vw;
+        }
+        #form-paso-three > form > #descuento > div > div > h5 {
+            font-size: 4vw;
+        }
+        #form-paso-three > form > #descuento > div > div > h5 > input{
+            font-size: 4vw;
+        }
+        #form-paso-three > form > #descuento > div > div > p {
+            font-size: 3.5vw;
+        }
+        #form-paso-three > form > #descuento > div > div > p > input{
+            font-size: 3.5vw;
+        }
+        #form-paso-three > form > #total {
+            width: 90vw;
+        }
+        #form-paso-three > form > #total > div#lanzamiento > div > div > h5 {
+            font-size: 3vw;
+        }
+        #form-paso-three > form > #total > div#lanzamiento > div > div > p {
+            font-size: 3.5vw;
+            line-height: 10vh;
+        }
+        #form-paso-three > form > #total > div#total-total > div > div > h5 {
+            font-size: 6vw;
+        }
+        #form-paso-three > form > #total > div#total-total > div > div > h5 > input{
+            font-size: 6vw;
+        }
+        #form-paso-three > form > #total > div#total-total > div > div > p {
+            font-size: 6vw;
+            font-weight: 700;
+        }
+        #form-paso-three > form > #total > div#total-total > div > div > p > span > input{
+            font-size: 6vw;
+            font-weight: 700;
+        }
+        #form-paso-three > form > #total > div#total-total > div > div > p.ahorro {
+            font-size: 4vw;
+        }
+        #form-paso-three > form > #total > div#total-total > div > div > p.ahorro > span > input{
+            font-size: 4vw;
+        }
+
+    }
+    @media only screen and (max-width : 768px) {
+        /*HOME*/
+        section#otras_opciones > .row > .col > .opcion {
+            height: 40vh;
+        }
+        /*PASOS*/
+        .sidenav li>a {
+            font-size: 4vw;
+        }
+        #steps > .step {
+            height: 6vh;
+            line-height: 6vh;
+        }
+        #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article {
+            height: 85vh;
+        }
+    }
+    @media only screen and (max-width : 576px) {
+        /*HOME*/
+        section#otras_opciones > .row > .col > .opcion {
+            height: 30vh;
+        }
+        /*SERVICIOS*/
+        section#jumbotron.servicio > p {
+            line-height: 2vh;
+        }
+        section.servicio#parallax > .parallax-container > .row > div > p {
+            line-height: 2vh;
+        }
+        section#otras_opciones.servicio > p {
+            line-height: 2vh;
+        }
+        /*PASOS*/
+        .sidenav li>a {
+            font-size: 5vw;
+        }
+        #steps > .step {
+            height: 5vh;
+            line-height: 5vh;
+        }
+        #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article {
+            height: 65vh;
+        }
+    }
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }

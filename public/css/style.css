@@ -1,0 +1,1575 @@
+/* Cosas */
+body{
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+.btn-custom{
+	background-color: #f44336 /*rgb(35, 31, 32)*/;
+    color: #fff;
+    border-radius: 0;
+    font-weight: 500;
+    padding: 1vh 2vw;
+    font-size: 1.7vw;
+    /*display: inline-block;*/
+    transition: .3s ease;
+}
+.btn-custom:hover{
+	background-color: #353535;
+	transition: .3s ease;
+}
+.btn-custom-btn{
+	cursor: pointer;
+	background-color: rgb(35, 31, 32);
+	border: 0;
+    color: #fff;
+    border-radius: 0;
+    font-weight: 500;
+    padding: 1.7vh 2vw;
+    font-size: 2vw;
+    display: inline-block;
+    transition: .3s ease;
+}
+.btn-custom-btn:hover{
+	background-color: #353535;
+	transition: .3s ease;
+}
+.btn-custom-btn:focus {
+    background-color: #353535;
+	transition: .3s ease;
+}
+
+.section-divider{
+	width: 80vw;
+	height: 0.2vh;
+	margin: auto;
+	background: rgb(35, 31, 32);
+}
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: rgb(35, 31, 32) 2px solid;
+    background-color: #fff;
+    z-index: 0;
+    border-radius: 50%;
+}
+[type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(35, 31, 32);
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 0;
+}
+[type="checkbox"].filled-in:checked+span:not(.lever):before {
+    top: 5px;
+    left: 9px;
+    width: 10px;
+    height: 20px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid rgb(35, 31, 32);
+    border-bottom: 2px solid rgb(35, 31, 32);
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+/*==========================*/
+/* TEMPLATE HEADER & FOOTER */
+/*==========================*/
+nav{
+	background: #fff;
+	text-align: center;
+	line-height: inherit;
+	-webkit-box-shadow: inherit;
+    box-shadow: inherit;
+}
+nav .sidenav-trigger {
+    position: absolute;
+    left: 5vw;
+    top: 4vh;
+}
+nav .sidenav-trigger i{
+	color: #000;
+	font-size: 10vw;
+}
+nav > a > #nav-logo{
+	width: 6.5vw;
+}
+nav > h3.title{
+	display: none;
+	font-weight: 800;
+    font-size: 4vw;
+    color: #000;
+    margin: 1vh 0 3vh;
+}
+nav > #nav-info{
+	color: rgb(35, 31, 32);
+}
+nav > #nav-info > h2{
+	margin: 2vh 0 0 0;
+	font-size: 2vw;
+	font-weight: 800;
+}
+nav > #nav-info > h3{
+	color: rgb(147, 149, 154);
+    margin: 1vh 0;
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+nav > #nav-info > p{
+	color:  rgb(147, 149, 154);
+    margin: 3vh 0;
+    font-size: 0.8vw;
+    font-weight: 800;
+  
+}
+nav > #nav-info > p#nav-date{
+    font-size: 1vw;
+    font-weight: 800;
+    top: 18vh;
+    right: 7vw;
+	position: absolute;
+    -webkit-transform: rotateZ(-90deg);
+    -moz-transform: rotateZ(-90deg);
+    -ms-transform: rotateZ(-90deg);
+    -o-transform: rotateZ(-90deg);
+    transform: rotateZ(-90deg);
+}
+nav > #nav-links{
+	width:90%;
+    margin-top: 3vh;
+	text-align: center;
+	display: inline-block;
+}
+nav > #nav-links > ul{
+	margin: auto;
+    display: inline-block;
+}
+nav > #nav-links > ul > li{
+	margin: 0 2.3vw;
+}
+nav > #nav-links > ul > li > a{
+	/*color: rgb(147, 149, 154);*/
+	color: #000000;
+    font-size: 1.1vw;
+	font-weight: 800;
+	transition: .3s ease;
+}
+nav > #nav-links > ul > li > a:hover{
+	color: rgb(35, 31, 32);
+	background: inherit;
+	transition: .3s ease;
+}
+.sidenav{
+	background: #000 !important;
+	text-align: center;
+	padding-top: 5vh;
+}
+.sidenav li>a {
+    color: #fff;
+    display: block;
+    font-size: 5vw;
+    font-weight: 700;
+}
+.sidenav #social-media {
+    height: 10vh;
+    margin-top: 5vh;
+    padding-top: 5vh;
+    border-top: 2px solid #fff;
+}
+
+
+footer > #social-media{
+	text-align: center;
+    margin: 10vh auto 5vh;
+    padding-top: 10vh;
+    width: 45vw;
+    color:#fff;
+}
+footer > #social-media > p{
+	color:  rgb(147, 149, 154);
+    margin: 3vh 0;
+    font-size: 0.8vw;
+    font-weight: 600;
+  
+}
+footer > #social-media > img{
+	width: 5vw;
+	margin-bottom: 2vh;
+}
+footer > #social-media > div > div > a{
+	font-size: 1.5vw;
+	font-weight: 800;
+	color: #fff;
+	transition: .3s ease;
+}
+footer > #social-media > div > div > a:hover{
+	color: rgb(147, 149, 154);
+	transition: .3s ease;
+}
+
+footer > #social-media > h6{
+	font-size: 2.1vw;
+	font-weight: 100;
+	color: rgb(147, 149, 154);
+}
+
+footer > #info{
+	text-align: center;
+    margin: auto;
+    padding-top: 5vh;
+    width: 80vw;
+    border-top: 1px solid;
+}
+footer > #info > h5{
+	color: rgb(147, 149, 154);
+    margin: 1vh 0;
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+footer > #info > p{
+	color: rgb(147, 149, 154);
+    margin: 3vh 0;
+    font-size: 0.8vw;
+    font-weight: 800;
+}
+footer > #info > h4{
+	color: rgb(147, 149, 154);
+    margin: 10vh 0 0;
+    font-size: 2vw;
+    font-weight: 800;
+}
+footer > #info > h3{
+	color: rgb(147, 149, 154);
+	margin: 0;
+    font-size: 1.5vw;
+}
+
+footer > #links{
+    width: 80vw;
+	margin: 7vh auto 0;
+	padding-bottom: 15vh;
+}
+footer > #links > .row{
+	margin-left: 15vh;
+}
+footer > #links > div > div > ul.link-list > .link-title{
+	margin-bottom: 4vh;
+}
+footer > #links > div > div > ul.link-list > .link-title > a{
+	color: #FFF;
+	font-size: 1.3vw;
+	font-weight: 800;
+	transition: .3s ease;
+}
+footer > #links > div > div > ul.link-list > .link-title > a:hover{
+	color: rgb(147, 149, 154);
+	transition: .3s ease;
+}
+footer > #links > div > div > ul.link-list > li > a{
+	color: rgb(147, 149, 154);
+	font-size: 1.3vw;
+	transition: .3s ease;
+}
+footer > #links > div > div > ul.link-list > li > a:hover{
+	color: #FFF;
+	transition: .3s ease;
+}
+
+footer.index{
+	background-color: #fff;
+}
+footer.servicio{
+	background-color: rgb(35, 31, 32);
+}
+footer.servicio {
+	color: #fff;
+}
+footer.servicio > #social-media > img{
+	content: url(../images/corona-blanca.svg);
+}
+footer.servicio > #social-media > div > div > a,
+footer.servicio > #social-media > h6,
+footer.servicio > #info > h5,
+footer.servicio > #info > h3,
+footer.servicio > #info > p,
+footer.servicio > #info > h4,
+footer.servicio > #links > div > div > ul.link-list > .link-title > a,
+footer.servicio > #links > div > div > ul.link-list > li > a{
+	color: #fff;
+}
+
+footer.servicio.steps > #social-media{
+	margin-top: 0;
+}
+
+/*==========================*/
+/*          INDEX           */
+/*==========================*/
+#main{
+	margin: 0 auto;
+    width: 80vw;
+}
+/*========= Main ===========*/
+/*jumbotron section*/
+section#jumbotron{
+	margin: 2vh 0;
+	text-align: center;
+}
+section#jumbotron > h3{
+	display: none;
+	font-weight: 800;
+	font-size: 4vw;
+	margin: 0 0 3vh;
+}
+section#jumbotron > img{
+	width: 100%;
+}
+section#jumbotron > img#jumbotron-mobile{
+	display: none;
+}
+/*/jumbotron section*/
+
+/*Como funciona section*/
+section#comofunciona{
+	background-color: #f4433;
+	text-align: center;
+	margin: 2vh 0 0vh 0;
+	padding-bottom: 15vh;
+}
+.comofunciona-paso{
+	text-align: left;
+}
+.comofunciona-paso > *{
+	display: inline-block;
+}
+#comofunciona > div > a.btn-custom{
+	margin-top: 10vh;
+    width: 45vw;
+}
+#comofunciona > div > #comofunciona-title{
+	padding-top: 11%;
+    height: 75vh;
+}
+#comofunciona > div > #comofunciona-title > h4{
+	font-weight: 800;
+	font-size: 1.8vw;
+	padding-left: 14vh;
+}
+#comofunciona > div > #comofunciona-title > h4#title-mobile{
+	display: none;
+	font-size: 6vw;
+}
+#comofunciona > div > #comofunciona-info{
+	margin-bottom: 10vh;
+}
+.comofunciona-paso > div.comofunciona-paso-n{
+	position: absolute;
+}
+.comofunciona-paso > div.comofunciona-paso-n > p{
+	margin: 0;
+	font-size: 1vw;
+	text-align: right;
+	font-weight: 700;
+}
+.comofunciona-paso > div.comofunciona-paso-info{
+    width: 24vw;
+    margin-left: 4vw;
+    margin-right: 0vw;
+}
+.comofunciona-paso > div.comofunciona-paso-info > h5{
+	margin: 0;
+	font-size: 1.4vw;
+	font-weight: 800;
+
+}
+.comofunciona-paso > div.comofunciona-paso-info > p{
+	margin: 0;
+	font-weight: 400;
+	font-size: 1.1vw;
+	width: 78%
+}
+.comofunciona-paso > div.comofunciona-paso-icono{
+	position: absolute;
+}
+.comofunciona-paso > div.comofunciona-paso-icono > img{
+	width: 3vw;
+}
+/*/Como funciona section*/
+
+/*Descuentos Section*/
+section#descuentos{
+	padding-top: 20vh;
+	text-align: center;
+}
+section#descuentos > h4{
+	font-size: 2.1vw;
+	font-weight: 800;
+	margin-bottom: 13vh;
+}
+section#descuentos > div > #descuentos-title{
+	float: left;
+	width: 45%;
+	text-align: right;
+}
+section#descuentos > div > #descuentos-title > h5{
+	font-weight: 700;
+	font-size: 1.2vw;
+}
+section#descuentos > div > .vertical-divider{
+	width: 0.1vw;
+    height: 15vh;
+    position: absolute;
+    margin-left: 41%;
+    background: #000;
+}
+section#descuentos > div > #descuentos-descuentos{
+	float: right;
+	width: 45%;
+	text-align: left;
+}
+section#descuentos > div > #descuentos-descuentos > h5{
+	font-weight: 700;
+	font-size: 1.2vw;
+	margin: 0.3vw 0;
+}
+section#descuentos > div > #descuentos-descuentos > h5 > span{
+	margin: 0 2vw;
+}
+
+section#descuentos > #descuentos_arma-tu-plan{
+	width: 80%;
+	min-height: 60vh;
+	margin: 20vh auto 0;
+    padding: 6vh 0vw 2vh;
+}
+section#descuentos > #descuentos_arma-tu-plan > h5{
+	padding-top: 18vh;
+	padding-left: 20vh !important;
+    font-size: 2 vw;
+    left: 20vh;
+    position: absolute;
+    font-weight: 800;
+}
+section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes{
+	text-align: right;
+    /*width: 70vw;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan{
+    text-align: left;
+    width: 8vw;
+    margin: 0 1vw;
+    display: inline-block;
+}
+section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan > .arma-tu-plan_plan-img > img{
+	width: 90%;
+
+}
+section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan > .arma-tu-plan_plan-checkbox{
+	margin: 10vh auto 0;
+    width: 3vw;
+}
+section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan > .arma-tu-plan_plan-checkbox > img{
+    width: 100%;
+}
+
+section#descuentos > #descuentos_subtotal{
+    width: 80%;
+    margin: 7vh auto 0;
+    padding: 0vh 3vw;
+    height: 11vh;
+    line-height: 12vh;
+}
+section#descuentos > #descuentos_subtotal > div > div > h5,
+section#descuentos > #descuentos_subtotal > div > div > p{
+	display: inline-block;
+	font-weight: 500;
+	margin: 0;
+}
+section#descuentos > #descuentos_subtotal > div > div > h5{
+	font-weight: 700;
+	font-size: 1.2vw;
+}
+section#descuentos > #descuentos_subtotal > div > div > p{
+	font-weight: 700;
+	font-size: 1.2vw;
+}
+
+section#descuentos > #descuentos_descuento{
+    width: 80%;
+    margin: 7vh auto 0;
+    padding: 0vh 3vw;
+    height: 11vh;
+    line-height: 12vh;
+}
+section#descuentos > #descuentos_descuento > div > div > h5,
+section#descuentos > #descuentos_descuento > div > div > p{
+	display: inline-block;
+	font-weight: 500;
+	margin: 0;
+}
+section#descuentos > #descuentos_descuento > div > div > h5{
+	font-weight: 800;
+	font-size: 1.7vw;
+}
+section#descuentos > #descuentos_descuento > div > div > h6{
+	margin-top: 4.2vh;
+	font-weight: 700;
+	font-size: 1.2vw;
+}
+section#descuentos > #descuentos_descuento > div > div > p{
+	font-weight: 700;
+	font-size: 1.2vw;
+}
+
+section#descuentos > #descuentos_total{
+    width: 80%;
+    margin: 7vh auto 0;
+}
+section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento{
+    padding: 2vh 3vw 0;
+    border-bottom: 0.2vh solid #000;
+}
+section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento > .row{
+    margin-bottom: 0;
+}
+section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento > div > div > p{
+	font-weight: 700;
+	font-size: 1.vw;
+}
+
+section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento > div > div > p > span{
+	font-weight: normal;
+    font-style: oblique;
+}
+
+section#descuentos > #descuentos_total > #total > .row{
+    margin-bottom: 0;
+}
+section#descuentos > #descuentos_total > #total{
+    padding: 2vh 3vw 2vh;
+}
+section#descuentos > #descuentos_total > #total > div > div > h5{
+	font-weight: 700;
+	font-size: 1.7vw;
+}
+section#descuentos > #descuentos_total > #total > div > div > p{
+	font-weight: 800;
+	font-size: 1.3vw;
+	margin: 0;
+}
+section#descuentos > #descuentos_total > #total > div > div > p > span{
+	font-size: 2vw;
+}
+section#descuentos > #descuentos_total > #total > div > div > p > span.ahorro{
+	font-size: 1.2vw;
+    font-weight: 300;
+}
+/*/Descuentos Section*/
+
+/* Otras opciones Section*/
+section#otras_opciones{
+	padding-top: 20vh;
+	text-align: center;
+	width: 55vw;
+    margin: auto;
+}
+section#otras_opciones > h4{
+	font-size: 2.2vw;
+	font-weight: 800;
+}
+section#otras_opciones > h5{
+	font-size: 1.5vw;
+	margin-bottom: 20vh;
+}
+section#otras_opciones > .row > .col{
+	padding: 0vh 2vw;
+}
+section#otras_opciones > .row > .col > .opcion{
+	padding: 6vh 2vw;
+	height: 70vh;
+}
+section#otras_opciones > .row > .col > .opcion.mobile{
+	display: none;
+}
+section#otras_opciones > .row > .col > .opcion > h5{
+	font-size: 1.5vw;
+	font-weight: 800;
+    margin-bottom: 7vh;
+}
+section#otras_opciones > .row > .col > .opcion > img{
+	width: 11vw;
+	padding-bottom: 4vh;
+}
+section#otras_opciones > .row > .col > .opcion > .btn-custom{
+	display: block;
+    width: 12vw;
+    font-size: 1.5vw;
+    margin: 4vh auto;
+}
+section#otras_opciones > .row > .col > .opcion > h4{
+	font-size: 2vw;
+	font-weight: 800;
+}
+section#otras_opciones > .row > .col > .opcion-dos > img{
+	width: 7vw;
+    margin: 0 1vw;
+    padding-bottom: 7vh;
+}
+section#otras_opciones > .row > .col > .opcion-dos > .btn-custom{
+	margin: 3vh auto 2vh;
+}
+section#otras_opciones > .opcion-tres{
+    margin: 20vh auto;
+    padding: 6vh 2vw;
+    min-height: 68vh;
+    width: 50vw;
+}
+section#otras_opciones > .opcion-tres > h5{
+	font-size: 2vw;
+	font-weight: 800;
+    margin-bottom: 7vh;
+}
+section#otras_opciones > .opcion-tres > img{
+	width: 7vw;
+    margin: 0 3vw;
+}
+section#otras_opciones > .opcion-tres > .btn-custom{
+	display: block;
+    width: 12vw;
+    font-size: 1.5vw;
+    margin: 6vh auto ;
+    margin-top: 10vh;
+}
+section#otras_opciones > .opcion-tres > h4{
+	font-size: 2.2vw;
+	font-weight: 800;
+}
+
+section#otras_opciones > #especifico > h5{
+    font-size: 1.8vw;
+}
+section#otras_opciones > #especifico > h4{
+    font-size: 3vw;
+    font-weight: 800;
+}
+section#otras_opciones > #especifico > .btn-custom{
+    display: block;
+    width: 13vw;
+    margin: 1vh auto;
+    font-size: 1.5vw;
+}
+section#otras_opciones > #especifico > .btn-custom.mobile{
+    display: none;
+    width: 50vw;
+    font-size: 4vw;
+}
+/*/Otras opciones Section*/
+/*==========================*/
+/*          STEPS           */
+/*==========================*/
+
+/*========= Step 1 =========*/
+#steps{
+	text-align: center;
+	margin: 10vh auto;
+	width: 40vw;
+}
+#steps > .step{
+    width: 2.5vw;
+    height: 5vh;
+    line-height: 5vh;
+	position: absolute;
+    display: inline-block;
+    font-weight: 500;
+	color: #fff;
+    background: rgb(147, 149, 154);
+}
+#steps > .step.active{
+	background: rgb(35, 31, 32);
+}
+#steps > .step.one{
+	margin-left: -2.5vw;
+}
+#steps > .step.two{
+	margin-left: -1.5vw;
+}
+#steps > .step-divider{
+	display: inline-block;
+	height: 2px;
+	margin-top: 2.5vh;
+	z-index: -1;
+	width: 10vw;
+	background: #000;
+}
+#steps > p{
+	font-size: 1.5vw;
+	font-weight: 500;
+}
+
+#form-paso-one{
+	text-align: center;
+    margin: 20vh auto 3vh;
+    width: 100%;
+}
+.paso-input{
+	padding: 0 1vw !important;
+	/*margin-top: 3vh;*/
+}
+.paso-input.more-margin > h5{
+	margin-top: 15vh;
+}
+.paso-input > h5{
+	color: rgb(35, 31, 32);
+	font-size: 2.5vw;
+	font-weight: 800;
+	margin-top: 7vh;
+}
+.paso-input > p{
+	color: rgb(35, 31, 32);
+	font-size: 1.4vw;
+	margin-top: 0;
+	font-weight: 500;
+}
+.paso-input > input{
+	width: 100% !important;
+	text-align: center;
+	color: rgb(35, 31, 32);
+    font-size: 1.4vw !important;
+    /*font-weight: 500;*/
+	border-bottom: 2px solid rgb(35, 31, 32) !important;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    -webkit-box-shadow: 0 1px 0 0 rgb(147, 149, 154);
+    box-shadow: 0 1px 0 0 rgb(147, 149, 154);
+}
+#form-paso-one > form > #paraquien{
+	text-align: center;
+	margin: 15vh 0;
+}
+#form-paso-one > form > #paraquien > h5{
+	color: rgb(35, 31, 32);
+	font-size: 2.5vw;
+	font-weight: 800;
+    margin-bottom: 10vh;
+}
+#form-paso-one > form > #paraquien > div > div{
+	text-align: center;
+}
+#form-paso-one > form > #paraquien > div > div > img{
+	height: 20vh;
+}
+#form-paso-one > form > #paraquien > div > div > p{
+	font-weight: 400;
+	font-size: 1.5vw;
+}
+#form-paso-one > form > #btns{
+	margin: 25vh auto 0;
+    width: 30vw;
+}
+
+.paso-inputs-checkboxes{
+	margin-top: 4vh;
+}
+.paso-inputs-checkboxes > p{
+	display: inline-block;
+	margin: 0 1vw;
+	font-weight: 500;
+	font-size: 1.5vw;
+}
+.paso-inputs-checkboxes > input[type=text]{
+	width: 20vw;
+	height: 3vh;
+	border-bottom: 2px solid rgb(35, 31, 32) !important; 
+}
+
+/*========= Step 2 =========*/
+#form-paso-two{
+	text-align: center;
+    margin: 20vh auto 3vh;
+    width: 100%;
+}
+.paso-title > h5{
+	color: rgb(35, 31, 32);
+	font-size: 2.5vw;
+	font-weight: 800;
+	margin-top: 7vh;
+}
+.paso-title > p{
+	color: rgb(35, 31, 32);
+	font-size: 1.4vw;
+	margin-top: 0;
+	font-weight: 500;
+}
+#form-paso-two > form > #paso-two-articles{
+	margin-top: 15vh;
+}
+#form-paso-two > form > #paso-two-articles > .row{
+	margin-bottom: 5vh;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article{
+    padding-top: 3vh;
+	width: 18vw;
+    min-height: 65vh;
+    margin: 0 auto 10vh;
+    color: rgb(35, 31, 32);
+    text-align: center;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > img{
+	width: auto;
+    max-width: 100%;
+    height: 25vh;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > h5{
+	font-weight: 800;
+	font-size: 1.7vw;
+	margin-top: 8vh;
+	margin-bottom: 0;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > a{
+	color: rgb(35, 31, 32);
+	font-size: 1.3vw;
+	text-decoration: underline;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > p{
+	font-weight: 600;
+	font-size: 2vw;
+	margin-bottom: 0;
+	padding-bottom: 1vh;
+	border-bottom: 1px solid;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > p > input{
+	font-weight: 600;
+	font-size: 2vw;
+	margin-bottom: 0;
+	padding-bottom: 1vh;
+	border-bottom: 0;
+	text-align: center;
+	color: rgb(35, 31, 32);
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad{
+	text-align: center;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > .signo{
+    display: inline-block;
+    width: 2vw;
+    cursor: pointer;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > .signo > img{
+    width: 100%;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > p{
+	font-weight: 600;
+	display: inline-block;
+	margin: 1.5vh 1.5vw 0;
+	font-size: 2vw;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > p > input{
+	border: 0;
+    width: 2vw;
+    display: inline-block;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 600;
+}
+#form-paso-two > form > #btns{
+	margin: 25vh auto 0;
+    width: 30vw;
+}
+.modal.paso_2{
+	height: 70vh;
+}
+.modal.paso_2::-webkit-scrollbar {
+    width: 9px;
+}
+.modal.paso_2::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(35, 31, 32);
+}
+.modal.paso_2::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.2);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.modal.paso_2 > .modal-content{
+	width: 27vw;
+    margin: auto;
+}
+.modal.paso_2 > .modal-content > h5{
+	margin: 5vh 0 8vh;
+	font-weight: 800;
+	font-size: 2vw;
+	font-family: 'Open sans'
+}
+.modal.paso_2 > .modal-footer > img{
+	width: 5vw;
+}
+/*========= Step 3 =========*/
+#form-paso-three{
+	text-align: center;
+    margin: 20vh auto 3vh;
+    width: 100%;
+}
+#form-paso-three > form > #plan-final{
+	min-height: 90vh;
+    margin-top: 15vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan{
+    text-align: center;
+    width: 13vw;
+    margin: 0 1vw;
+    display: inline-block;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-img{
+	margin: auto;
+    width: 75%;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-img > img{
+	width: 100%;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info{
+	margin-top: 8vh;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > p{
+	font-weight: 800;
+	font-size: 1.6vw;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad{
+	margin-top: 10vh;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > p{
+	font-weight: 500;
+	font-size: 1vw;
+	margin: 0;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > p{
+	font-weight: 700;
+    font-size: 2vw;
+	margin: 0;
+	display: inline-block;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > p > input{
+	border-bottom: 0;
+	color: #272727;
+    text-align: center;
+    display: inline-block;
+    width: 3vw;
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > a{
+    color: rgb(35, 31, 32);
+    font-size: 1vw;
+    height: 2vh;
+    position: absolute;
+    display: inline-block;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > a > i{
+    font-size: 2vw;
+    font-weight: 800;
+    cursor: pointer;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > a.flecha-up{
+    margin-top: 0vh;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > a.flecha-down{
+    margin-top: 3vh;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > a{
+	color: rgb(35, 31, 32);
+	font-size: 0.9vw;
+	cursor: pointer;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > h5{
+	font-weight: 700;
+    font-size: 2.3vw;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > h5 > input{
+	border-bottom: 0;
+    color: #272727;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.3vw;
+    font-weight: 700;
+}
+#form-paso-three > form > #subtotal{
+	margin: 10vh auto 0;
+	width: 50vw;
+	height: 10vh;
+	line-height: 10vh;
+}
+#form-paso-three > form > #subtotal > div > div > h5{
+	font-size: 1.7vw;
+	line-height: 6vh;
+	font-weight: 700;
+	margin-top: 1.5vh;
+}
+#form-paso-three > form > #subtotal > div > div > h5 > input{
+	border: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: rgb(35, 31, 32);
+}
+#form-paso-three > form > #subtotal > div > div > p{
+	text-align: right;
+	padding-right: 6vw;
+	margin: 0;
+	font-size: 1.7vw;
+	font-weight: 700;
+}
+#form-paso-three > form > #subtotal > div > div > p > input{
+	border: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: right;
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: rgb(35, 31, 32);
+}
+#form-paso-three > form > #descuento{
+	margin: 5vh auto;
+	width: 50vw;
+	height: 15vh;
+	line-height: 15vh;
+}
+#form-paso-three > form > #descuento > div > div > h5{
+	font-size: 2.3vw;
+	line-height: 10vh;
+	font-weight: 800;
+}
+#form-paso-three > form > #descuento > div > div > h5 > input{
+	color: rgb(35, 31, 32);
+	border: 0;
+    margin: 0;
+    display: inline-block;
+	font-size: 2.3vw;
+	line-height: 10vh;
+	font-weight: 800;
+}
+#form-paso-three > form > #descuento > div > div > p{
+	text-align: right;
+	padding-right: 6vw;
+	margin: 0;
+	font-size: 1.7vw;
+	font-weight: 700;
+}
+#form-paso-three > form > #descuento > div > div > p > input{
+	color: rgb(35, 31, 32);
+	border: 0;
+    margin: 0;
+    display: inline-block;
+	text-align: right;
+	padding-right: 6vw;
+	margin: 0;
+	font-size: 1.7vw;
+	font-weight: 700;
+}
+#form-paso-three > form > #total{
+	margin: 5vh auto;
+	width: 50vw;
+	/*height: 30vh;*/
+	height: 14vh;
+	line-height: 14vh;
+}
+#form-paso-three > form > #total > div#lanzamiento{
+	border-bottom: 1px solid;
+    height: 14vh;
+    display: none;
+}
+#form-paso-three > form > #total > div#lanzamiento > div > div > h5{
+	font-size: 1.7vw;
+	line-height: 10vh;
+	font-weight: 700;
+}
+#form-paso-three > form > #total > div#lanzamiento > div > div > p{
+	text-align: right;
+	padding-right: 6vw;
+	font-size: 1.7vw;
+	line-height: 14vh;
+	font-weight: 700;
+}
+#form-paso-three > form > #total > div#total-total{
+    height: 14vh;
+}
+#form-paso-three > form > #total > div#total-total > .row{
+    margin: 0;
+}
+#form-paso-three > form > #total > div#total-total > div > div > h5{
+	text-align: left;
+    padding-left: 2vw;
+	font-size: 1.7vw;
+	line-height: 10vh;
+	font-weight: 700;
+}
+#form-paso-three > form > #total > div#total-total > div > div > p{
+	text-align: right;
+    padding-right: 6vw;
+    font-size: 3vw;
+    height: 6vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 12vh;
+    font-weight: 800;
+}
+#form-paso-three > form > #total > div#total-total > div > div > p > span > input{
+	color: rgb(35, 31, 32);
+	border: 0;
+    margin: 0;
+    display: inline-block;
+	text-align: right;
+    padding-right: 6vw;
+    font-size: 3vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 12vh;
+    font-weight: 800;
+}
+#form-paso-three > form > #total > div#total-total > div > div > p.ahorro{
+	font-size: 1.3vw;
+	margin-top: 0;
+	font-weight: 200;
+}
+#form-paso-three > form > #total > div#total-total > div > div > p.ahorro > span > input{
+	font-size: 1.3vw;
+	margin-top: 0;
+	font-weight: 200;
+}
+#form-paso-three > form > #btns{
+	margin: 25vh auto 0;
+    width: 30vw;
+}
+/*=================================*/
+/*            SERVICIOS            */
+/*=================================*/
+
+/*======== Diseño =======*/
+section#jumbotron.servicio{
+	margin: 2vh auto 25vh;
+	width: 50vw;
+	text-align: center;
+}
+section#jumbotron.servicio > h2{
+	margin: 13vh 0 0;
+	font-size: 13vw;
+	font-weight: 800;
+}
+section#jumbotron.servicio > h3{
+	margin: 0 0 15vh;
+	font-size: 3vw;
+	font-weight: 100;
+}
+section#jumbotron.servicio > img{
+	width: 40vw;
+}
+section#jumbotron.servicio > h4{
+	margin: 0 0 5vh;
+	font-size: 2.7vw;
+	font-weight: 800;
+}
+section#jumbotron.servicio > a.btn-custom{
+	display: block;
+	width: 20vw;
+	margin: auto;
+}
+section#jumbotron.servicio > p{
+	margin: 3vh 0 0;
+    font-size: 1.6vw;
+    line-height: 3vh;
+    font-weight: 500;
+}
+
+section.servicio#parallax{
+    min-height: 65vh;
+	text-align: center;
+}
+section.servicio#parallax > .parallax-container{
+	padding: 6vh 8vw;
+	height: 100%;
+}
+section.servicio#parallax > .parallax-container > .row > div.col{
+	color: #fff;
+	padding: 0 5.2vw;
+}
+section.servicio#parallax > .parallax-container > .row > div > h5{
+	font-size: 1.5vw;
+	font-weight: 800;
+	margin-bottom: 2vh;
+}
+section.servicio#parallax > .parallax-container > .row > div > p{
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 3vh;
+    margin-bottom: 7vh;
+}
+section.servicio#parallax > .parallax-container > .row > div > img{
+    width: 4vw;
+}
+section.servicio#parallax > .parallax-container > a.btn-custom{
+	background-color: #fff;
+    color: rgb(35, 31, 32);
+    font-size: 2vw;
+    display: block;
+    margin: 6vh auto;
+    width: 23vw;
+    /*transition: .3s ease;*/
+}
+section.servicio#parallax > .parallax-container > a.btn-custom:hover{
+	/*transition: .3s ease;*/
+}
+
+section#otras_opciones.servicio{
+	text-align: center;
+}
+section#otras_opciones.servicio > h4{
+	font-size: 2.7vw;
+	font-weight: 800;
+}
+section#otras_opciones.servicio > p{
+	margin-top: 0;
+	margin-bottom: 13vh;
+	font-weight: 500;
+	font-size: 1.6vw;
+    line-height: 3vh;
+}
+section#otras_opciones.servicio > #especifico > a.btn-custom{
+    width: 53vw;
+    font-size: 2vw;
+}
+
+.paso-input > h5{
+	color: rgb(35, 31, 32);
+	font-size: 2.5vw;
+	font-weight: 800;
+	margin-top: 7vh;
+}
+
+/******/
+.logo{
+	padding-top: 10px;
+}
+.color-contact {
+    color:  #FF0000;
+}
+.sidenav{
+	background: #000 !important;
+	text-align: center;
+	padding-top: 5vh;
+}
+nav > #nav-info > p{
+	/*color:  rgb(147, 149, 154);*/
+    margin: 3vh 0;
+    font-size: 0.8vw;
+    font-weight: 800;
+  
+}
+
+/******/
+/*Como funciona section*/
+section#homecabecera{
+	text-align: left;
+	margin: 10vh 0 0vh 0;
+	padding-bottom: 20vh;
+}
+.homecabecera_hr {
+   padding-bottom: 5vh;
+   size: 30%;
+}
+.hr-divider{
+	width: 50vw;
+	height: 0.1vh;
+	margin: left;
+	background: rgb(215,215,215);
+}
+section#beer{
+	text-align: center;
+	width: 50vh;
+	padding-top: 10vh;
+}
+
+section#imagenes{
+	padding-top: 10vh;
+	text-align: center;
+	margin-bottom: 0vh;
+}
+
+section#imagenes2{
+	padding-top: 10vh;
+	text-align: center;
+	margin-bottom: 0vh;
+}
+
+section#servicios {
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+}
+section#servicios >div > h6{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+}
+.f-b{
+	font-size: 2.3vw;
+    font-weight: 800;
+    color: #FFF;
+}
+
+section > #bagnner > .row{
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	text-align: center;
+}
+
+#bagnner{
+	width:100%;
+    margin-top: 3vh;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 10vh;
+}
+#social-media2{
+	text-align: center;
+    margin: 2vh auto 5vh;
+    padding-top: 2vh;
+    width: 35vw;
+}
+#social-media2 > p{
+
+    margin: vh 0;
+    font-size: 0.vw;
+    font-weight: 600;
+}
+#social-media2 > img{
+	width: 5vw;
+	margin-bottom: 2vh;
+}
+#social-media2 > div > div > a{
+	font-size: 1.5vw;
+	font-weight: 800;
+	color: #000;
+	transition: .3s ease;
+}
+#social-media2 > div > div > a:hover{
+	color: rgb(147, 149, 154);
+	transition: .3s ease;
+}
+
+#social-media2  div > div > a > h6{
+	color: #f44336;
+    margin: 2vh 0;
+    font-size: 1.3vw !important; 
+	font-weight: 600 !important;
+}
+.imagen_descuento{
+	width: 17vh;
+
+}
+/***SERVICIOS***/
+section#servicios1{
+	background-color: #f4433;
+	text-align: center;
+	margin: 2vh 0 0vh 0;
+	padding-bottom: 8vh;
+}
+#servicios1 > div > #servicios-title{
+	padding-top: 5%;
+    height: 25vh;
+}
+#servicios1 > div > #servicios-title > h4{
+	font-weight: 800;
+	font-size: 1.8vw;
+	color: #000
+}
+#servicios1 > div > #servicios-title > h4#title-mobile{
+	display: none;
+	font-size: 6vw;
+}
+
+#servicios1 > div > div > div > ul > li#link-title1{
+	display: none;
+	font-size: 6vw;
+}
+.link-title1 > a{
+	color: #000 !important;
+	transition: .3s ease !important;
+	font-size: 1.5vw !important;
+	font-weight: 700 !important;
+}
+.p-t{
+	padding-bottom: 5vh !important;
+}
+
+.link-title1 > a:hover{
+	color: rgb(147, 149, 154) !important;
+	transition: .3s ease;
+}
+.servicio-links1 li > a{
+	color: #000;
+	transition: .3s ease;
+	font-size: 1.5vw;
+	font-weight: 400;
+
+}
+
+section#mensaje{
+	background-color: #f4433;
+	text-align: left;
+	margin: 2vh 0 0vh 0;
+	padding-bottom: 3vh;
+	padding-top: 10vh;
+}
+section#mensaje > div > div >div >  h4{
+	font-weight: 700;
+	font-size: 1.5vw;
+	color: #000
+}
+.contacto{
+	padding-top: 10vh;
+
+}
+.form-label1{
+	font-size: 1.2vw !important;
+	font-weight: 700!important;
+}
+.form-text{
+	border: solid 0.5px !important;
+	background-color:#fafafa !important;
+}
+.textarea{
+	height:100px !important;
+	border:1px solid #000000;
+	background-color:#fafafa !important;
+}
+section#proyectos{
+	text-align: center;
+	margin: 2vh 0 0vh 0;
+	padding-bottom: 3vh;
+	padding-top: 10vh;
+}
+section#proyectos >div >div>div >img{
+	text-align: center;
+	width: 100%
+}
+section#proyectos >div >div>div >h5{
+	text-align: left;
+	font-weight: 700;
+	font-size: 1.2vw;
+	color: #000
+}
+section#proyectos >div >div>div >h5 >a{
+	text-align: left;
+	font-weight: 700;
+	font-size: 1.2vw;
+	color: #000
+}
+section#proyectos >div >div>div >h5 >a:hover{
+	color: rgb(147, 149, 154) !important;
+	transition: .3s ease;
+}
+
+section#casa_cinco{
+	text-align: center;
+	margin: 2vh 0 0vh 0;
+	padding-bottom: 3vh;
+	padding-top: 5vh;
+}
+section#casa_cinco >div >div >h3{
+	text-align: left;
+	font-weight: 700;
+	font-size: 3.5vw;
+	color: #000
+}
+section#casa_cinco >div >div >h5{
+	text-align: left;
+	font-weight: 700;
+	font-size: 1.5vw;
+	color: #000
+}
+section#casa_cinco >div >div > div >p{
+	text-align: left;
+	font-size: 1.5vw;
+	font-weight: 400;
+}
+
+.casa_cinco_img{
+	text-align: center;
+
+}
+
+.lamuse_logo{
+	width: 130% !important;
+}
+section#la-amuse{
+	text-align: center;
+	margin: 2vh 0 0vh 0;
+	padding-bottom: 3vh;
+	padding-top: 10vh;
+	padding-left: 4vh;
+}
+section#la-amuse >div >div>div >img{
+	text-align: center;
+	width: 100%
+}
+section#la-amuse >div >div>div >h5{
+	text-align: left;
+	font-weight: 700;
+	font-size: 1.2vw;
+	color: #000
+}
+section#la-amuse >div >div>div >h5 >a{
+	text-align: left;
+	font-weight: 700;
+	font-size: 1.2vw;
+	color: #000
+}
+section#la-amuse >div >div>div >h5 >a:hover{
+	color: rgb(147, 149, 154) !important;
+	transition: .3s ease;
+}
+
+/***acerca***/
+section#acerca{
+	margin: 2vh 0 0vh 0;
+	padding-bottom: 3vh;
+	padding-top: 10vh;
+	padding-left: 5vh;
+}
+section > div>div>div#acerca-texto{
+	text-align: left !important;
+	padding-left: 20vh;
+}
+section > div>div>div#acerca-texto > h5{
+	font-weight: 700;
+	font-size: 1.8vw;
+}
+
+section > div>div>div#acerca-img{
+	text-align: center !important;
+	min-height: 100vh;
+	vertical-align: middle;
+	padding-left: 15vh;
+	padding-top: 8vh;
+}
+section > div>div>div >img{
+	text-align: center !important;
+	min-height: 100vh;
+	vertical-align: middle;
+
+}
