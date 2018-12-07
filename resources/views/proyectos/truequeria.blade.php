@@ -17,9 +17,9 @@
 				<p>
 					Proyecto que nace para ofrecer un servicio totalmente innovador y <br>
 					el cual ekastudio se encargó de llevar a cabo, con toda la visión  <br>
-					profesional, para ofrecer una página web confiable para susu usuarios,<br>
+					profesional, para ofrecer una página web confiable para sus usuarios,<br>
 					siendo la exigencia primordial la "comodidad". El reto fue precisamente<br>
-					hacerla muy amigable visualmente y distribuir todo los elemntos<br>
+					hacerla muy amigable visualmente y distribuir todos los elemntos<br>
 					y señalizaciones de manera correcta para que fueran no solo<br>
 					fáciles de ubicar, sino mas bien instintivos
 				</p>

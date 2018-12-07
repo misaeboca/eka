@@ -48,26 +48,25 @@ $ruta = $porciones[0];*/
 				    <li><a href="{{ url('/acerca') }}">¿QUIEN ES EKA?</a></li>
 				    <li><a href="{{ url('/servicios') }}">SERVICIOS</a></li>
 				    <li><a href="{{url('proyectos')}}">PROYECTOS</a></li>
-				    <li><a href="{{ url('contact') }}">CONTACTO</a></li>
+				    <li><a href="{{ url('contacto') }}">CONTACTO</a></li>
 				</ul>
 			</div>
 			
 		</nav>
 		<ul class="sidenav" id="mobile-demo">
-			<li><a class="sidenav_a" href="{{ url('/about') }}">ACERCA DE EKA</a></li>
-		    <li><a href="{{ url('about/#our-services') }}">SERVICIOS</a></li>
-		    <li><a href="#">PROYECTOS</a></li>
-		    <li><a href="{{ url('contact') }}">CONTACTO</a></li>
+			<li><a class="sidenav_a" href="{{ url('/acerca') }}">ACERCA DE EKA</a></li>
+		    <li><a href="{{ url('/servicios') }}"">SERVICIOS</a></li>
+		    <li><a href="{{url('proyectos')}}">PROYECTOS</a></li>
+		    <li><a href="{{ url('contacto') }}">CONTACTO</a></li>
 		    <div id="social-media">
 		    	<ul>
-		    	    <li><a href="#">FACEBOOK</a></li>
-				    <li><a href="#">INSTAGRAM</a></li>
-				    <li><a href="#">LINKEDIN</a></li>
+		    	    <li><a href="https://www.facebook.com/ekastudio13/">FACEBOOK</a></li>
+				    <li><a href="https://www.linkedin.com/company/eka-studio/">INSTAGRAM</a></li>
+				    <li><a href="https://www.linkedin.com/company/eka-studio/">LINKEDIN</a></li>
 		    	</ul>
 		    </div>
 		</ul>
 	</header>
-
 
 	@if( $url == '/')
 	<br>
@@ -85,77 +84,107 @@ $ruta = $porciones[0];*/
 		@yield('content')
 	</div>
 	
+	@if( $url == 'acerca')
+	<br>
+	<br>
+      	<div class="row red" id="la-amuse-foot">
+				<div class="col s12 m12 red">
+					<p>
+						"El branding es lo que dicen de tu marca cuando no estas".<br>
+							En EKA sabemos que tu imagen tiene consecuencias, por eso diseñamos<br>
+							para  públicos exigentes
+					
+					</p>
+				</div>
+		</div>
+		<br><br><br><br><br><br>
+
+
+	@endif
+	<br><br>
 	<footer class=" black">
-			<div id="social-media">
-				<img src="{{ URL::asset('images/corona-blanca.svg') }}" alt="corona">
-				<div class="row">
-					<div class="col m4"><a href="https://www.facebook.com/ekastudio13/">
+      <div class="container">
+        <div class="row">
+        	<div class="col s12 m12 footer_img">
+        		<img style="padding-top: 5vh;padding-bottom: 3vh" width="65px;"  src="{{ URL::asset('images/corona-blanca.svg') }}" alt="corona">
+        	</div>
+
+        	<div class="col l2 s12 "></div>
+        	<div class="row flow-text col l8 s12 m12 flow-text" style="font-size: 14px">
+	        	 <div class="grid-example col s12 m4 redes_soc_r" style="text-align: right;">
+			      		<a class="white-text social2" " href="https://www.facebook.com/ekastudio13/">
 						FACEBOOK
 						</a>
-					</div>
-					<div class="col m4"><a href="https://www.instagram.com/eka.studio/?hl=en">
+			      </div>
+			      <div class="grid-example col s12 m4 " style="text-align: center;">
+			      		<a class="white-text social2" href="https://www.instagram.com/eka.studio/?hl=en">
 						INSTAGRAM
-					</a></div>
-					<div class="col m4"><a href="https://www.linkedin.com/company/eka-studio/">
+			      </div>
+			       <div class="grid-example col s12 m4 redes_soc_l" style="text-align: left;">
+			      	<a class="white-text social2" href="https://www.linkedin.com/company/eka-studio/">
 						LINKEDIN
-					</a></div>
-				</div>
-				<h6>SÍGUENOS EN NUESTRAS REDES SOCIALES</h6>
-				<br>
-				<span class="white-text"> MEX | VZLA</span>
-				<p ><span class="color-contact">ENVÍANOS TUS PREGUNTAS A HELLO@EKASTUDIO.NET</span></p>
-			</div>
+					</a>
+			      </div>
+			      <br>
+			      <div class="col s12 m12 white-text" style="text-align: center; font-size: 19px">
+			      	 <span>SÍGUENOS EN NUESTRAS REDES SOCIALES</span>
+			      </div>
+			      <br>
+			      <div class="col s12 m12 white-text" style="text-align: center; padding-top: 3vh;font-size: 12px;  font-weight: bold;">
+			      	<span class="white-text"> MEX | VZLA</span>
+					<br>
+					<span class="red-text" style="font-size: 10px">ENVÍANOS TUS PREGUNTAS A HELLO@EKASTUDIO.NET</span>
+			      </div>
+		    </div>
 
-			<section>
-				<div class="row col-12">
-					<div class="col s8 offset-s2 divider"></div>
-				</div>
-			</section>
-			<br><br>
-			<section id="servicios">
-				<div class="row col-12">
-						<h4 class="f-b">SERVICIOS</h4>
-						<h6>Somos un equipo de profesionales que trabaja para crear y posicionar tu marca</h6>
-				</div>
-			</section>
-	
-			<div id="links">
-				<div class="row">
-					<div class="col m3 ">
-						<ul class="link-list">
-						    <li class="link-title"><a href="#">Copywriting</a></li>
-						    <li><a href="#">Nombre</a></li>
-						    <li><a href="#">Eslogan</a></li>
-						    <li><a href="#">Redacción</a></li>
-						</ul>
-					</div>
-					<div class="col m3 ">
-						<ul class="link-list">
-						    <li class="link-title"><a href="#">Diseño Gráfico</a></li>
-						    <li><a href="{{ url('servicio/diseno/logotipo') }}">Logotipo</a></li>
-						    <li><a href="#">Aplicaciones de Marca</a></li>
-						    <li><a href="#">Señalización</a></li>
-						    <li><a href="#">Manual de Marca</a></li>
-						</ul>
-					</div>
-					<div class="col m3">
-						<ul class="link-list">
-						    <li class="link-title"><a href="#">Ilustración</a></li>
-						    <li><a href="#">Diseño de íconos</a></li>
-						    <li><a href="#">Diseño de infografías</a></li>
-						</ul>
-					</div>
-					<div class="col m2">
-						<ul class="link-list">
-						    <li class="link-title"><a href="#">Diseño Web</a></li>
-						    <li><a href="#">Diseño de interface</a></li>
-						    <li><a href="#">Experiencia de usuario</a></li>
-						    <li><a href="#">Programación</a></li>
-						</ul>
-					</div>
-				</div>
+		    <div class="row col  s12 m12">
+		    	 <br>
+				<div class="col s12 m11 divider"></div>
 			</div>
-	</footer>
+		    <div class="row flow-text col s12 m12 white-text" style="text-align: center;">
+				<h4 style="font-size: 22px;  font-weight: bold;">SERVICIOS</h4>
+				<h6 style="font-size: 14px;">Somos un equipo de profesionales que trabaja para crear y posicionar tu marca</h6>
+				<br>
+		    </div>
+
+		     <div class="col l3 s12 m12 servicio_footer" style="font-size: 14px;">
+            	<h6 class="white-text" style="font-size: 14px;"><b>Copywriting</b></h6>
+            	<ul>
+	              <li><a class="grey-text text-lighten-3" >Nombre</a></li>
+	              <li><a class="grey-text text-lighten-3" >Eslogan</a></li>
+	              <li><a class="grey-text text-lighten-3" >Redacción</a></li>
+	            </ul>
+          	</div>
+          	<div class="col l3 s12 m12 servicio_footer"  style="font-size: 14px;">
+            	<h6 class="white-text" style="font-size: 14px;"><b>Diseño Gráfico</b></h6>
+            	<ul>
+	              <li><a class="grey-text text-lighten-3" >Logotipo</a></li>
+	              <li><a class="grey-text text-lighten-3" >Aplicaciones de Marca</a></li>
+	              <li><a class="grey-text text-lighten-3" >Señalización</a></li>
+	              <li><a class="grey-text text-lighten-3" >Manual de Marca</a></li>
+	              <li><a class="grey-text text-lighten-3" >Menú restaurante</a></li>
+	            </ul>
+          	</div>
+          	<div class="col l3 s12 m12 servicio_footer" style="font-size: 14px;">
+            	<h6 class="white-text" style="font-size: 14px;" ><b>Ilustración</b></h6>
+            	<ul>
+	              <li><a class="grey-text text-lighten-3" >Diseño de íconos</a></li>
+	              <li><a class="grey-text text-lighten-3" >Diseño de infografías</a></li>
+	            </ul>
+          	</div>
+          	<div class="col l3 s12 m12 servicio_footer" style="font-size: 14px;">
+            	<h6 class="white-text" style="font-size: 14px;"><b>Diseño Web</b></h6>
+            	<ul>
+	              <li><a class="grey-text text-lighten-3" >Diseño de interface</a></li>
+	              <li><a class="grey-text text-lighten-3" >Experiencia de usuario</a></li>
+	              <li><a class="grey-text text-lighten-3" >Programación</a></li>
+	            </ul>
+          	</div>
+          
+        </div>
+      </div>
+      
+    </footer>
 
 	<!-- Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

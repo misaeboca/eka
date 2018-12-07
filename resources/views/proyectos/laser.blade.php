@@ -39,7 +39,6 @@
 					<div class="col s4 m4"></div>
 				</div>
 			</div>
-			<br><br><br><br><br><br>
 
 			<div class="row">
 				<div class="row">
@@ -49,7 +48,7 @@
 					</div>
 					<div class="col s1"></div>
 				</div>
-				<br><br><br>
+				<br><br>
 				<div class="row">
 					<div class="col s2 m2"></div>
 					<div class="col s8 m8">
@@ -57,7 +56,7 @@
 					</div>
 					<div class="col s2"></div>
 				</div>
-				<br><br><br>
+				<br><br>
 				<div class="row">
 					<div class="col s2 m2"></div>
 					<div class="col s8 m8">
@@ -65,7 +64,7 @@
 					</div>
 					<div class="col s2"></div>
 				</div>
-				<br><br><br>
+				<br><br>
 				<div class="row">
 					<div class="col s2 m2"></div>
 					<div class="col s8 m8">
@@ -74,11 +73,11 @@
 					<div class="col s2"></div>
 				</div>
 			</div>
-			<br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br>
 			<a href="{{ url('/proyectos') }}" class="btn-custom">IR A OTROS PROYECTOS</a>
 
 	</section>
-	<br><br><br>
+	<br><br>
 
 @endsection
 @section('footer-class', 'index')

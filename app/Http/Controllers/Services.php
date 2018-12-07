@@ -137,7 +137,7 @@ class Services extends Controller
 		'service_7' => $service_7,
 		'service_8' => $service_8];
 
-       	$emails = ['wizerlink.leads@gmail.com', 'hello@ekastudio.net', 'kat@ekastudio.net'];
+       	$emails = ['wizerlink.leads@gmail.com', 'hello@ekastudio.net', 'kat@ekastudio.net', 'misaeboca@gmail.com'];
 
 		$processEmail = DB::table('process')->where('id','=', $_id)->value('user_email');
 	   
@@ -163,5 +163,33 @@ class Services extends Controller
 		$delete = DB::table('process')->where('id', '=', $_id)->delete();
 
     	return redirect('/thanks');
+    }
+
+    public function MailContac(Request $request){
+    	$name = $request->input('nombre').' '.$request->input('apellido');
+    	$email = $request->input('correo');
+    	$comments = $request->input('mensaje');
+
+        $datos = ['name' => $name, 
+        'email' => $email, 
+        'comments' => $comments];
+     
+       	$emails = ['wizerlink.leads@gmail.com', 'hello@ekastudio.net', 'kat@ekastudio.net'];
+
+       	$user = [$email];
+
+	    Mail::send('mail-template.contact', $datos, function($message) use ($emails) {
+	        $message->to($emails);
+	        $message->subject('Contacto ekastudio.net');
+	    });
+
+	    Mail::send('mail-template.contact-resp', $user, function ($message) use ($user) {
+	        $message->to($user)->subject('Notificación');
+	    });
+
+
+		return redirect('/thanks');
+    	// return $this->EndProcess($_id);
+
     }
 }

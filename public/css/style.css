@@ -5,12 +5,14 @@ body{
 }
 
 .btn-custom{
+	cursor: pointer;
 	background-color: #f44336 /*rgb(35, 31, 32)*/;
+	border: 0;
     color: #fff;
     border-radius: 0;
     font-weight: 500;
     padding: 1vh 2vw;
-    font-size: 1.7vw;
+    font-size: 1.2vw;
     /*display: inline-block;*/
     transition: .3s ease;
 }
@@ -173,8 +175,8 @@ nav > #nav-links > ul > li > a:hover{
 .sidenav li>a {
     color: #fff;
     display: block;
-    font-size: 5vw;
-    font-weight: 700;
+    font-size: 2vw;
+    font-weight: 600;
 }
 .sidenav #social-media {
     height: 10vh;
@@ -186,8 +188,8 @@ nav > #nav-links > ul > li > a:hover{
 
 footer > #social-media{
 	text-align: center;
-    margin: 10vh auto 5vh;
-    padding-top: 10vh;
+    margin: 5vh auto 1vh;
+    padding-top: 5vh;
     width: 45vw;
     color:#fff;
 }
@@ -195,28 +197,26 @@ footer > #social-media > p{
 	color:  rgb(147, 149, 154);
     margin: 3vh 0;
     font-size: 0.8vw;
-    font-weight: 600;
+    font-weight: 500;
   
 }
 footer > #social-media > img{
-	width: 5vw;
+	width: 4vw;
 	margin-bottom: 2vh;
 }
-footer > #social-media > div > div > a{
-	font-size: 1.5vw;
-	font-weight: 800;
-	color: #fff;
-	transition: .3s ease;
-}
-footer > #social-media > div > div > a:hover{
-	color: rgb(147, 149, 154);
-	transition: .3s ease;
-}
+
 
 footer > #social-media > h6{
-	font-size: 2.1vw;
-	font-weight: 100;
+	font-size: 1.5vw;
+	font-weight: 400;
 	color: rgb(147, 149, 154);
+}
+footer > #social-media > span{
+	margin-top: 5vh !important;
+	font-size: 0.8vw;
+	font-weight: 800;
+	/*color: rgb(147, 149, 154);*/
+	color: #FFF;
 }
 
 footer > #info{
@@ -229,14 +229,14 @@ footer > #info{
 footer > #info > h5{
 	color: rgb(147, 149, 154);
     margin: 1vh 0;
-    font-size: 1.3vw;
+    font-size: 1vw;
     font-weight: 800;
 }
 footer > #info > p{
 	color: rgb(147, 149, 154);
     margin: 3vh 0;
     font-size: 0.8vw;
-    font-weight: 800;
+    font-weight: 700;
 }
 footer > #info > h4{
 	color: rgb(147, 149, 154);
@@ -247,24 +247,24 @@ footer > #info > h4{
 footer > #info > h3{
 	color: rgb(147, 149, 154);
 	margin: 0;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 footer > #links{
     width: 80vw;
 	margin: 7vh auto 0;
-	padding-bottom: 15vh;
+	padding-bottom: 1vh;
 }
 footer > #links > .row{
-	margin-left: 15vh;
+	/*margin-left: 15vh;*/
 }
 footer > #links > div > div > ul.link-list > .link-title{
 	margin-bottom: 4vh;
 }
 footer > #links > div > div > ul.link-list > .link-title > a{
 	color: #FFF;
-	font-size: 1.3vw;
-	font-weight: 800;
+	font-size: 1vw;
+	font-weight: 600;
 	transition: .3s ease;
 }
 footer > #links > div > div > ul.link-list > .link-title > a:hover{
@@ -273,7 +273,7 @@ footer > #links > div > div > ul.link-list > .link-title > a:hover{
 }
 footer > #links > div > div > ul.link-list > li > a{
 	color: rgb(147, 149, 154);
-	font-size: 1.3vw;
+	font-size: 1vw;
 	transition: .3s ease;
 }
 footer > #links > div > div > ul.link-list > li > a:hover{
@@ -354,7 +354,7 @@ section#comofunciona{
 }
 #comofunciona > div > #comofunciona-title{
 	padding-top: 11%;
-    height: 75vh;
+    height: 65vh;
 }
 #comofunciona > div > #comofunciona-title > h4{
 	font-weight: 800;
@@ -366,7 +366,7 @@ section#comofunciona{
 	font-size: 6vw;
 }
 #comofunciona > div > #comofunciona-info{
-	margin-bottom: 10vh;
+	margin-bottom: 3vh;
 }
 .comofunciona-paso > div.comofunciona-paso-n{
 	position: absolute;
@@ -404,7 +404,7 @@ section#comofunciona{
 
 /*Descuentos Section*/
 section#descuentos{
-	padding-top: 20vh;
+	padding-top: 10vh;
 	text-align: center;
 }
 section#descuentos > h4{
@@ -443,18 +443,19 @@ section#descuentos > div > #descuentos-descuentos > h5 > span{
 }
 
 section#descuentos > #descuentos_arma-tu-plan{
-	width: 80%;
-	min-height: 60vh;
-	margin: 20vh auto 0;
+	width: 75%;
+	min-height: 50vh;
+	margin: 17vh auto 0;
     padding: 6vh 0vw 2vh;
 }
 section#descuentos > #descuentos_arma-tu-plan > h5{
-	padding-top: 18vh;
-	padding-left: 20vh !important;
-    font-size: 2 vw;
+	padding-top: 10vh;
+	padding-left: 30vh !important;
+    font-size: 2.1vw;
     left: 20vh;
     position: absolute;
     font-weight: 800;
+    text-align: left;
 }
 section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes{
 	text-align: right;
@@ -464,7 +465,7 @@ section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes{
 }
 section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan{
     text-align: left;
-    width: 8vw;
+    width: 7vw;
     margin: 0 1vw;
     display: inline-block;
 }
@@ -473,15 +474,15 @@ section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-
 
 }
 section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan > .arma-tu-plan_plan-checkbox{
-	margin: 10vh auto 0;
-    width: 3vw;
+	margin: 8vh auto 0;
+    width: 2.7vw;
 }
 section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan > .arma-tu-plan_plan-checkbox > img{
-    width: 100%;
+    width: 95%;
 }
 
 section#descuentos > #descuentos_subtotal{
-    width: 80%;
+    width: 75%;
     margin: 7vh auto 0;
     padding: 0vh 3vw;
     height: 11vh;
@@ -503,7 +504,7 @@ section#descuentos > #descuentos_subtotal > div > div > p{
 }
 
 section#descuentos > #descuentos_descuento{
-    width: 80%;
+    width: 75%;
     margin: 7vh auto 0;
     padding: 0vh 3vw;
     height: 11vh;
@@ -530,7 +531,7 @@ section#descuentos > #descuentos_descuento > div > div > p{
 }
 
 section#descuentos > #descuentos_total{
-    width: 80%;
+    width: 75%;
     margin: 7vh auto 0;
 }
 section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento{
@@ -576,95 +577,117 @@ section#descuentos > #descuentos_total > #total > div > div > p > span.ahorro{
 
 /* Otras opciones Section*/
 section#otras_opciones{
-	padding-top: 20vh;
+	padding-top: 10vh;
 	text-align: center;
-	width: 55vw;
+	width: 52vw;
     margin: auto;
+    height: auto;
 }
 section#otras_opciones > h4{
-	font-size: 2.2vw;
+	font-size: 2vw;
 	font-weight: 800;
 }
 section#otras_opciones > h5{
-	font-size: 1.5vw;
-	margin-bottom: 20vh;
+	font-size: 1.3vw;
+	margin-bottom: 15vh;
 }
 section#otras_opciones > .row > .col{
 	padding: 0vh 2vw;
 }
 section#otras_opciones > .row > .col > .opcion{
-	padding: 6vh 2vw;
-	height: 70vh;
+	padding: 2vh 1vw;
+	height: auto;
+	
+}
+
+section#otras_opciones > .row > .col > .opcion-dos {
+    padding: 2vh 1vw 17px;
+	width: auto;
+    min-height: auto;
 }
 section#otras_opciones > .row > .col > .opcion.mobile{
 	display: none;
+	height: auto;
 }
 section#otras_opciones > .row > .col > .opcion > h5{
 	font-size: 1.5vw;
 	font-weight: 800;
-    margin-bottom: 7vh;
+    margin-bottom: 6vh;
+}
+section#otras_opciones > .row > .col > .opcion-dos > h5{
+	font-size: 1.5vw;
+	font-weight: 800;
+    margin-bottom: 3vh;
+
+
 }
 section#otras_opciones > .row > .col > .opcion > img{
-	width: 11vw;
-	padding-bottom: 4vh;
+	width: 9vw;
+	padding-bottom: 2vh;
 }
 section#otras_opciones > .row > .col > .opcion > .btn-custom{
 	display: block;
-    width: 12vw;
-    font-size: 1.5vw;
-    margin: 4vh auto;
+    width: 9vw;
+    font-size: 1vw;
+    margin: 2vh auto;
 }
 section#otras_opciones > .row > .col > .opcion > h4{
-	font-size: 2vw;
+	font-size: 1.6vw;
 	font-weight: 800;
+}
+section#otras_opciones > .row > .col > .opcion-dos > h5{
+    padding-bottom: 0vh;
 }
 section#otras_opciones > .row > .col > .opcion-dos > img{
 	width: 7vw;
     margin: 0 1vw;
-    padding-bottom: 7vh;
+    padding-bottom: 1vh;
 }
 section#otras_opciones > .row > .col > .opcion-dos > .btn-custom{
-	margin: 3vh auto 2vh;
+	margin: 4vh auto 2vh;
 }
 section#otras_opciones > .opcion-tres{
-    margin: 20vh auto;
-    padding: 6vh 2vw;
-    min-height: 68vh;
-    width: 50vw;
+    margin: 15vh auto;
+    padding: 3vh 2vw;
+    min-height: auto;
+    width: 33vw;
 }
 section#otras_opciones > .opcion-tres > h5{
-	font-size: 2vw;
+	font-size: 1.4vw;
 	font-weight: 800;
-    margin-bottom: 7vh;
+    margin-bottom: 1vh;
 }
 section#otras_opciones > .opcion-tres > img{
-	width: 7vw;
-    margin: 0 3vw;
+	width: 5vw;
+    margin: 0 2vw;
 }
 section#otras_opciones > .opcion-tres > .btn-custom{
 	display: block;
-    width: 12vw;
-    font-size: 1.5vw;
-    margin: 6vh auto ;
-    margin-top: 10vh;
+    width: 8vw;
+    font-size: 1vw;
+    margin: 3vh auto ;
+    margin-top: 4vh;
 }
 section#otras_opciones > .opcion-tres > h4{
-	font-size: 2.2vw;
+	font-size: 2vw;
 	font-weight: 800;
 }
 
 section#otras_opciones > #especifico > h5{
-    font-size: 1.8vw;
+    font-size: 1.3vw;
+    font-weight: 600;
 }
 section#otras_opciones > #especifico > h4{
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 800;
 }
 section#otras_opciones > #especifico > .btn-custom{
     display: block;
-    width: 13vw;
+    width: 10vw;
     margin: 1vh auto;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+    text-align: center;
+    padding: 1vh 1vw !important;
 }
 section#otras_opciones > #especifico > .btn-custom.mobile{
     display: none;
@@ -681,6 +704,7 @@ section#otras_opciones > #especifico > .btn-custom.mobile{
 	text-align: center;
 	margin: 10vh auto;
 	width: 40vw;
+	padding-top: 10vh;
 }
 #steps > .step{
     width: 2.5vw;
@@ -693,7 +717,7 @@ section#otras_opciones > #especifico > .btn-custom.mobile{
     background: rgb(147, 149, 154);
 }
 #steps > .step.active{
-	background: rgb(35, 31, 32);
+	background: #f44336;
 }
 #steps > .step.one{
 	margin-left: -2.5vw;
@@ -711,7 +735,7 @@ section#otras_opciones > #especifico > .btn-custom.mobile{
 }
 #steps > p{
 	font-size: 1.5vw;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 #form-paso-one{
@@ -728,24 +752,24 @@ section#otras_opciones > #especifico > .btn-custom.mobile{
 }
 .paso-input > h5{
 	color: rgb(35, 31, 32);
-	font-size: 2.5vw;
+	font-size: 1.8vw;
 	font-weight: 800;
 	margin-top: 7vh;
 }
 .paso-input > p{
 	color: rgb(35, 31, 32);
-	font-size: 1.4vw;
+	font-size: 1vw;
 	margin-top: 0;
-	font-weight: 500;
+	font-weight: 400;
 }
 .paso-input > input{
-	width: 100% !important;
 	text-align: center;
 	color: rgb(35, 31, 32);
     font-size: 1.4vw !important;
     /*font-weight: 500;*/
-	border-bottom: 2px solid rgb(35, 31, 32) !important;
+	border-bottom: 1px solid rgb(35, 31, 32) !important;
 }
+
 input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
     -webkit-box-shadow: 0 1px 0 0 rgb(147, 149, 154);
     box-shadow: 0 1px 0 0 rgb(147, 149, 154);
@@ -756,15 +780,16 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 #form-paso-one > form > #paraquien > h5{
 	color: rgb(35, 31, 32);
-	font-size: 2.5vw;
-	font-weight: 800;
+	font-size: 2.1vw;
+	font-weight: 700;
     margin-bottom: 10vh;
 }
 #form-paso-one > form > #paraquien > div > div{
 	text-align: center;
 }
-#form-paso-one > form > #paraquien > div > div > img{
+#form-paso-one > form > #paraquien > div > div > div  >img{
 	height: 20vh;
+	width: 50%
 }
 #form-paso-one > form > #paraquien > div > div > p{
 	font-weight: 400;
@@ -777,18 +802,24 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 
 .paso-inputs-checkboxes{
 	margin-top: 4vh;
+	padding-left: 5vh;
 }
 .paso-inputs-checkboxes > p{
-	display: inline-block;
+	/*display: inline;
 	margin: 0 1vw;
-	font-weight: 500;
-	font-size: 1.5vw;
+	font-weight: 400;
+	font-size: 1.1vw;*/
 }
 .paso-inputs-checkboxes > input[type=text]{
-	width: 20vw;
-	height: 3vh;
-	border-bottom: 2px solid rgb(35, 31, 32) !important; 
+	width: 12vw;
+	height: 2vh;
+	border-bottom: 1px solid rgb(35, 31, 32) !important; 
 }
+
+.paso-input > .derecha {
+	text-align: left !important;
+}
+
 
 /*========= Step 2 =========*/
 #form-paso-two{
@@ -798,38 +829,46 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 .paso-title > h5{
 	color: rgb(35, 31, 32);
-	font-size: 2.5vw;
+	font-size: 2.1vw;
 	font-weight: 800;
-	margin-top: 7vh;
+	margin-top: 5vh;
 }
 .paso-title > p{
 	color: rgb(35, 31, 32);
-	font-size: 1.4vw;
+	font-size: 1.1vw;
 	margin-top: 0;
-	font-weight: 500;
+	font-weight: 400;
+}
+#paso-two-articles > .row .col.l3{
+	padding-right: 1vh;
+    padding-left: 0vh;
 }
 #form-paso-two > form > #paso-two-articles{
 	margin-top: 15vh;
+	width: 90%;
+	text-align: center;
+	padding-left: 20vh;
+	padding-right: 5vh ;
 }
 #form-paso-two > form > #paso-two-articles > .row{
 	margin-bottom: 5vh;
 }
 #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article{
     padding-top: 3vh;
-	width: 18vw;
+	width: 13vw;
     min-height: 65vh;
-    margin: 0 auto 10vh;
+    margin: 0 auto 5vh;
     color: rgb(35, 31, 32);
     text-align: center;
 }
 #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > img{
 	width: auto;
-    max-width: 100%;
+    max-width: 80%;
     height: 25vh;
 }
 #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > h5{
 	font-weight: 800;
-	font-size: 1.7vw;
+	font-size: 1.3vw;
 	margin-top: 8vh;
 	margin-bottom: 0;
 }
@@ -840,7 +879,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > p{
 	font-weight: 600;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	margin-bottom: 0;
 	padding-bottom: 1vh;
 	border-bottom: 1px solid;
@@ -859,7 +898,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > .signo{
     display: inline-block;
-    width: 2vw;
+    width: 1.7vw;
     cursor: pointer;
 }
 #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > .signo > img{
@@ -882,6 +921,9 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 #form-paso-two > form > #btns{
 	margin: 25vh auto 0;
     width: 30vw;
+}
+#btns {
+	padding-top: 10vh;
 }
 .modal.paso_2{
 	height: 70vh;
@@ -916,7 +958,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 #form-paso-three{
 	text-align: center;
     margin: 20vh auto 3vh;
-    width: 100%;
+    width: 80%;
 }
 #form-paso-three > form > #plan-final{
 	min-height: 90vh;
@@ -1005,7 +1047,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 #form-paso-three > form > #subtotal{
 	margin: 10vh auto 0;
-	width: 50vw;
+	width: 45vw;
 	height: 10vh;
 	line-height: 10vh;
 }
@@ -1024,6 +1066,9 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     font-weight: 700;
     color: rgb(35, 31, 32);
 }
+ #form-paso-three > form > #subtotal > div > div > p > input{
+ 		font-size: 1.7vw;
+ }
 #form-paso-three > form > #subtotal > div > div > p{
 	text-align: right;
 	padding-right: 6vw;
@@ -1042,9 +1087,10 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 #form-paso-three > form > #descuento{
 	margin: 5vh auto;
-	width: 50vw;
+	width: 45vw;
 	height: 15vh;
 	line-height: 15vh;
+	padding-left: 2vh;
 }
 #form-paso-three > form > #descuento > div > div > h5{
 	font-size: 2.3vw;
@@ -1080,9 +1126,9 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 #form-paso-three > form > #total{
 	margin: 5vh auto;
-	width: 50vw;
+	width: 45vw;
 	/*height: 30vh;*/
-	height: 14vh;
+	height: 20vh;
 	line-height: 14vh;
 }
 #form-paso-three > form > #total > div#lanzamiento{
@@ -1096,8 +1142,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	font-weight: 700;
 }
 #form-paso-three > form > #total > div#lanzamiento > div > div > p{
-	text-align: right;
-	padding-right: 6vw;
+	text-align: center;
 	font-size: 1.7vw;
 	line-height: 14vh;
 	font-weight: 700;
@@ -1115,24 +1160,33 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	line-height: 10vh;
 	font-weight: 700;
 }
+#form-paso-three > form > #total > div#total-total > div > div > h6{
+	text-align: center;
+    padding-left: 2vw;
+	font-size: 1.3vw;
+	line-height: 10vh;
+	font-weight: 400;
+	padding-top: 2vh;
+
+}
 #form-paso-three > form > #total > div#total-total > div > div > p{
-	text-align: right;
-    padding-right: 6vw;
-    font-size: 3vw;
+	text-align: center;
+  
+    font-size: 3vw !important;
     height: 6vh;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 12vh;
     font-weight: 800;
 }
-#form-paso-three > form > #total > div#total-total > div > div > p > span > input{
+#form-paso-three > form > #total > div#total-total > div > div > p >  input{
 	color: rgb(35, 31, 32);
 	border: 0;
     margin: 0;
     display: inline-block;
-	text-align: right;
+	text-align: center !important;
     padding-right: 6vw;
-    font-size: 3vw;
+    font-size: 2.4vw;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 12vh;
@@ -1158,60 +1212,66 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 
 /*======== Diseño =======*/
 section#jumbotron.servicio{
-	margin: 2vh auto 25vh;
+	margin: 2vh auto 18vh;
 	width: 50vw;
 	text-align: center;
 }
 section#jumbotron.servicio > h2{
 	margin: 13vh 0 0;
-	font-size: 13vw;
-	font-weight: 800;
+	font-size: 10vw;
+	font-weight: 700;
 }
 section#jumbotron.servicio > h3{
 	margin: 0 0 15vh;
 	font-size: 3vw;
 	font-weight: 100;
+	display: inline;
 }
 section#jumbotron.servicio > img{
-	width: 40vw;
+	width: 35vw;
 }
 section#jumbotron.servicio > h4{
 	margin: 0 0 5vh;
-	font-size: 2.7vw;
+	font-size: 2.3vw;
 	font-weight: 800;
 }
 section#jumbotron.servicio > a.btn-custom{
 	display: block;
-	width: 20vw;
+	width: 12vw;
 	margin: auto;
 }
 section#jumbotron.servicio > p{
 	margin: 3vh 0 0;
-    font-size: 1.6vw;
-    line-height: 3vh;
-    font-weight: 500;
+    font-size: 1.5vw;
+    line-height: 4vh;
+    font-weight: 400;
 }
 
 section.servicio#parallax{
     min-height: 65vh;
 	text-align: center;
 }
+.diseno{
+	max-height: 40vh !important;
+	text-align: center;
+}
+
 section.servicio#parallax > .parallax-container{
-	padding: 6vh 8vw;
-	height: 100%;
+	padding: 3vh 8vw;
+	height: auto;
 }
 section.servicio#parallax > .parallax-container > .row > div.col{
 	color: #fff;
 	padding: 0 5.2vw;
 }
 section.servicio#parallax > .parallax-container > .row > div > h5{
-	font-size: 1.5vw;
-	font-weight: 800;
+	font-size: 1.2vw;
+	font-weight: 500;
 	margin-bottom: 2vh;
 }
 section.servicio#parallax > .parallax-container > .row > div > p{
-    font-size: 1.5vw;
-    font-weight: 500;
+    font-size: 1.2vw;
+    font-weight: 400;
     line-height: 3vh;
     margin-bottom: 7vh;
 }
@@ -1225,6 +1285,8 @@ section.servicio#parallax > .parallax-container > a.btn-custom{
     display: block;
     margin: 6vh auto;
     width: 23vw;
+    font-size: 1.8vw;
+    font-weight: 700;
     /*transition: .3s ease;*/
 }
 section.servicio#parallax > .parallax-container > a.btn-custom:hover{
@@ -1235,34 +1297,45 @@ section#otras_opciones.servicio{
 	text-align: center;
 }
 section#otras_opciones.servicio > h4{
-	font-size: 2.7vw;
+	font-size: 2.5vw;
 	font-weight: 800;
+}
+.algo >h4{
+	padding-top: 10vh;
+	text-align: center
+	font-size: 2.5vw;
+	font-weight: 800;
+}
+.algo >p{
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 13vh;
+	font-weight: 500;
+	font-size: 1.3vw;
+    line-height: 3vh;
 }
 section#otras_opciones.servicio > p{
 	margin-top: 0;
 	margin-bottom: 13vh;
 	font-weight: 500;
-	font-size: 1.6vw;
-    line-height: 3vh;
+	font-size: 1.3vw;
+    line-height: auto;
 }
 section#otras_opciones.servicio > #especifico > a.btn-custom{
-    width: 53vw;
-    font-size: 2vw;
+    width: 35vw;
+    font-size: 1.4vw;
 }
 
-.paso-input > h5{
-	color: rgb(35, 31, 32);
-	font-size: 2.5vw;
-	font-weight: 800;
-	margin-top: 7vh;
-}
 
 /******/
 .logo{
 	padding-top: 10px;
 }
 .color-contact {
-    color:  #FF0000;
+    color:  #FF0000 !important;
+    font-weight: 700 !important;
+	font-size: 0.7vw !important;
+	line-height: 0vh !important;
 }
 .sidenav{
 	background: #000 !important;
@@ -1317,16 +1390,18 @@ section#servicios {
     font-weight: 600;
     color: #FFF;
     text-align: center;
+    padding-top: 3vh;
 }
 section#servicios >div > h6{
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-weight: 400;
     color: #FFF;
     text-align: center;
 }
+
 .f-b{
-	font-size: 2.3vw;
-    font-weight: 800;
+	font-size: 1.9vw !important;
+    font-weight: 700;
     color: #FFF;
 }
 
@@ -1357,30 +1432,31 @@ section > #bagnner > .row{
     font-weight: 600;
 }
 #social-media2 > img{
-	width: 5vw;
+	width: 4vw;
 	margin-bottom: 2vh;
 }
-#social-media2 > div > div > a{
-	font-size: 1.5vw;
+#social-media2 > div > div > div >a{
+	font-size: 1vw;
 	font-weight: 800;
 	color: #000;
 	transition: .3s ease;
 }
-#social-media2 > div > div > a:hover{
+#social-media2 > div > div > div >a:hover{
 	color: rgb(147, 149, 154);
 	transition: .3s ease;
 }
 
-#social-media2  div > div > a > h6{
+#social-media2  div > div > div > a > h6{
 	color: #f44336;
     margin: 2vh 0;
-    font-size: 1.3vw !important; 
-	font-weight: 600 !important;
+    font-size: 1.1vw !important; 
+	font-weight: 800 !important;
 }
 .imagen_descuento{
 	width: 17vh;
 
 }
+
 /***SERVICIOS***/
 section#servicios1{
 	background-color: #f4433;
@@ -1432,13 +1508,50 @@ section#mensaje{
 	background-color: #f4433;
 	text-align: left;
 	margin: 2vh 0 0vh 0;
-	padding-bottom: 3vh;
-	padding-top: 10vh;
+	padding-top: 7vh;
 }
 section#mensaje > div > div >div >  h4{
 	font-weight: 700;
 	font-size: 1.5vw;
 	color: #000
+}
+section#mensaje2{
+	background-color: #f4433;
+	text-align: center;
+	margin: 2vh 0 0vh 0;
+	padding-bottom: 3vh;
+	padding-top: 0vh;
+}
+section#mensaje2 > div > div >div >  h4{
+	font-weight: 700 !important;
+	font-size: 1.5vw !important;
+	color: #000 !important;
+}
+section#mensaje2 > div > div >div >  h5{
+	font-weight: 700 !important;
+	font-size: 1vw !important;
+	color: #000 !important;
+}
+section#mensaje2 > div > div >div > div  a{
+	font-weight: 700;
+	font-size: 1vw;
+	color: #000;
+	cursor: pointer;
+}
+section#mensaje2 > div > div >div > div  a:hover{
+	font-weight: 700;
+	font-size: 1vw;
+	color: #000;
+	cursor: pointer;
+	color: rgb(147, 149, 154) !important;
+}
+.msj_l{
+		margin-left:11vh;
+}
+.mapa{
+	min-height:250px;
+	width: 60%;
+	height: 70%;
 }
 .contacto{
 	padding-top: 10vh;
@@ -1462,6 +1575,10 @@ section#proyectos{
 	margin: 2vh 0 0vh 0;
 	padding-bottom: 3vh;
 	padding-top: 10vh;
+}
+section#proyectos >div >div>div >a >img{
+	text-align: center;
+	width: 100%
 }
 section#proyectos >div >div>div >img{
 	text-align: center;
@@ -1520,17 +1637,36 @@ section#la-amuse{
 	text-align: center;
 	margin: 2vh 0 0vh 0;
 	padding-bottom: 3vh;
-	padding-top: 10vh;
+	padding-top: 1vh;
 	padding-left: 4vh;
 }
 section#la-amuse >div >div>div >img{
 	text-align: center;
 	width: 100%
 }
+section#la-amuse >div >div>div > div>img{
+	text-align: center;
+	width: 100%
+}
+.la_amuse{
+	vertical-align: middle !important;
+	width: 40% !important;
+	text-align: left !important;
+}
+.la_amuse_otras{
+	vertical-align: middle !important;
+	width: 70% !important;
+	padding-top: 5vh
+}
+.la_amuse2{
+	vertical-align: middle !important;
+	width: 70% !important;
+	padding-top: 8vh
+}
 section#la-amuse >div >div>div >h5{
 	text-align: left;
 	font-weight: 700;
-	font-size: 1.2vw;
+	font-size: 1.8vw;
 	color: #000
 }
 section#la-amuse >div >div>div >h5 >a{
@@ -1543,11 +1679,25 @@ section#la-amuse >div >div>div >h5 >a:hover{
 	color: rgb(147, 149, 154) !important;
 	transition: .3s ease;
 }
+section#la-amuse >div >div>div >p{
+	text-align: left;
+	font-weight: 500;
+	font-size: 1.4vw;
+	line-height: 20px;
+	color: #000
+}
+div#la-amuse-foot{
+	font-weight: 400;
+	font-size: 1.4vw;
+	text-align: center;
+	line-height: 22px;
+	color: #fff;
+}
 
 /***acerca***/
 section#acerca{
 	margin: 2vh 0 0vh 0;
-	padding-bottom: 3vh;
+	padding-bottom: 1vh;
 	padding-top: 10vh;
 	padding-left: 5vh;
 }
@@ -1558,18 +1708,408 @@ section > div>div>div#acerca-texto{
 section > div>div>div#acerca-texto > h5{
 	font-weight: 700;
 	font-size: 1.8vw;
+
+}
+section > div>div>div#acerca-texto > p{
+	font-weight: 500 !important;
+	font-size: 1.3vw !important;
+	line-height:20px;
 }
 
+div>div>div>div#acerca-img{
+	text-align: center !important;
+	vertical-align: middle;
+	min-height: 60vh;
+	vertical-align: middle !important;
+	padding-left: 15vh !important;
+	padding-top: 33vh !important;
+
+    height: auto;
+}
 section > div>div>div#acerca-img{
 	text-align: center !important;
-	min-height: 100vh;
 	vertical-align: middle;
-	padding-left: 15vh;
-	padding-top: 8vh;
-}
-section > div>div>div >img{
-	text-align: center !important;
-	min-height: 100vh;
-	vertical-align: middle;
+	min-height: 90vh;
+	vertical-align: middle !important;
+	padding-left: 15vh !important;
+	padding-top: 33vh !important;
 
+    height: auto;
+}
+
+.start-up{
+	z-index: 3 !important;
+	text-align: left !important;
+	font-weight: 700 !important;
+	font-size: 3.5vw !important;
+	padding-left:5vh; 
+
+}
+.start-up-h6{
+	z-index: 3 !important;
+	text-align: left; !important;
+	font-weight: 800 !important;
+	font-size: 1.5vw !important;
+	padding-left:5vh;
+	z-index: 3;
+}
+.start-up-img{
+	z-index: 1 !important;
+	text-align: center !important;
+	width: 70% !important;
+	padding-top: 10vh;
+	top:0; 
+	padding-left:22vh; 
+	height: auto;
+}
+#marca{
+	text-align: center;
+}
+#marca div > h4{
+	font-weight: 700 !important;
+	font-size: 3.8vw !important;
+}
+#marca div > h6{
+	font-weight: 800 !important;
+	font-size: 1.5vw !important;
+}
+#marca div > img{
+	text-align: right !important
+}
+
+.nombre-img{
+	z-index: 1 !important;
+	text-align: center !important;
+	width: 100% !important;
+	padding-top: 10vh;
+	padding-top: 10vh;
+	top:0; 
+	padding-left:22vh; 
+}
+.nombre-p{
+	z-index: 3 !important;
+	text-align: right !important;
+	padding-bottom:  100vh;
+
+}
+.img-t{
+	padding-top: 10vh !important;
+}
+.img-texto {
+   	position: relative;
+   	float: left;
+   	padding-top: 10vh;
+  
+   }
+.img-texto img{
+   	padding-left: 33vh;
+}
+.img-texto span {
+    position: absolute;
+    bottom: 50%;
+    left: 73%;
+    right: 0;
+    z-index: 999;
+    background: transparent;
+    border-bottom: 1px;
+    padding: 10px;
+    color: #ccc solid;
+    text-align: left; !important;
+    width: 30%;
+}
+.img-texto div {
+    position: absolute;
+    bottom: 50%;
+    left: 63%;
+    right: 0;
+    z-index: 999;
+    background: transparent;
+    border-bottom: 1px;
+    border-color: #ccc;
+    padding: 10px;
+    color: #ccc solid;
+    text-align: left; !important;
+    width: 30%
+}
+.back{
+	border-bottom: 1px !important;
+	border-color: #ccc;
+	padding-right: 5vh !important;
+}
+
+/***servicios menu****/
+.img-t-menu{
+	padding-top: 10vh !important;
+}
+.img-texto-menu {
+   	position: relative;
+   	float: left;
+   	padding-top: 20vh;
+  
+   }
+.img-texto-menu img{
+   	padding-left: 5vh;
+}
+.img-texto-menu span {
+    position: absolute;
+    top: 48%;
+    left: 78%;
+    right: 0;
+    z-index: 999;
+    background: transparent;
+    border-bottom: 1px;
+    padding: 10px;
+    color: #ccc solid;
+    text-align: left; !important;
+    width: 30%;
+}
+.img-texto-menu div {
+    position: absolute;
+    top: 48%;
+    left: 68%;
+    right: 0;
+    z-index: 999;
+    background: transparent;
+    border-bottom: 1px;
+    border-color: #ccc;
+    padding: 20px;
+    color: #ccc solid;
+    text-align: left; !important;
+    width: 10%
+}
+
+/***servicios aplicaciones****/
+.img-t-apli{
+	padding-top: 15vh !important;
+	padding-left: 10vh !important;
+}
+.img-texto-apli {
+   	position: relative;
+   	float: right;
+   	padding-top: 20vh;
+}
+.img-texto-apli img{
+   	padding-left: 30vh;
+}
+.img-texto-apli span {
+    position: absolute;
+    top: 52%;
+    left:  0;
+    right: 0;
+    padding-left: 5% !important;
+    z-index: 999;
+    background: transparent;
+    border-bottom: 1px;
+    padding: 10px;
+    color: #ccc solid;
+    width: 80%;
+}
+.img-texto-apli div {
+    position: absolute;
+    padding-left: 15% !important;
+    top: 52%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: transparent;
+    border-bottom: 1px;
+    border-color: #ccc;
+    padding: 20px;
+    color: #ccc solid;
+    text-align: left; !important;
+    width: 10%
+}
+.texto-i {
+   	right: inherit !important;
+    left: 100;
+ }
+
+@media screen and (max-width: 990px) {
+	#paso-two-articles > .row .col.l3{
+		padding-right: 0vh;
+	    padding-left: 11vh;
+	}
+	.venta{
+        text-align: left !important;
+    }
+    .foto_eka{
+            text-align: center;
+            width: 40%;
+            padding-top: 20%
+        }
+ 	.sip{
+		display: none;
+		height: auto;
+	}
+	.servicio_footer{
+    	text-align: center !important;
+    }
+
+    #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article{
+	    padding-top: 3vh;
+		width: 13vw;
+	    min-height: 110vh;
+	    margin: 0 auto 5vh;
+	    color: rgb(35, 31, 32);
+	    text-align: center;
+	}
+	#form-paso-two > form > #paso-two-articles { 
+		padding-left: 10px;
+	}
+	#form-paso-three > form > #subtotal{
+		margin: 10vh auto 0;
+		width: 65vw !important;
+		height: 10vh;
+		line-height: 10vh;
+	}
+	#form-paso-three > form > #subtotal > div > div > p > input{
+		font-size: 2vw;
+	}
+	#form-paso-three > form > #descuento{
+		margin: 5vh auto;
+		width: 65vw;
+		height: 15vh;
+		line-height: 15vh;
+		padding-left: 2vh;
+	}
+	
+}
+@media screen and (max-width: 820px) {
+	.foto_eka{
+            text-align: center;
+            width: 40%;
+    }
+
+    #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article{
+	    padding-top: 3vh;
+		width: 13vw;
+	    min-height: 90vh;
+	    margin: 0 auto 5vh;
+	    color: rgb(35, 31, 32);
+	    text-align: center;
+	}
+	#form-paso-two > form > #paso-two-articles { 
+		padding-left: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 360px) {
+	#paso-two-articles > .row .col.l3 {
+	    padding-right: 0vh;
+	    padding-left: 6vh;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#paso-two-articles > .row .col.l3 {
+	    padding-right: 0vh;
+	    padding-left: 9vh;
+	}
+	.btn-custom {
+	    cursor: pointer;
+	    background-color: #f44336 /*rgb(35, 31, 32)*/;
+	    border: 0;
+	    color: #fff;
+	    border-radius: 0;
+	    font-weight: 500;
+	    padding: 1vh 2vw;
+	    font-size: 3vw;
+	    /* display: inline-block; */
+	    transition: .3s ease;
+	    width: 150px;
+	    padding-bottom: 3px;
+	}
+	/*contacto*/
+    .redes_soc_l, .redes_soc_r, .redes_negrita, .img_person{
+		text-align: center !important;
+	}
+
+	#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article{
+	    padding-top: 3vh;
+		width: 13vw;
+	    min-height: 80vh;
+	    margin: 0 auto 5vh;
+	    color: rgb(35, 31, 32);
+	    text-align: center;
+	}
+	#form-paso-two > form > #paso-two-articles { 
+		padding-left: 10px;
+	}
+
+
+	div>div>div>div#acerca-img{
+		text-align: left !important;
+		vertical-align: middle;
+		vertical-align: middle !important;
+		padding-top: 5vh !important;
+		padding-left: 0vh !important;
+	    height: auto;
+	}
+}
+
+}
+@media only screen and (max-width: 600px) {
+	.venta{
+        text-align: left !important;
+    }
+	.div_eka{
+            text-align: left !important;
+            width: 40%;
+    }
+	 #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article{
+	    padding-top: 3vh;
+		width: 13vw;
+	    min-height: 70vh;
+	    margin: 0 auto 5vh;
+	    color: rgb(35, 31, 32);
+	    text-align: center;
+	}
+
+}
+@media only screen and (min-width: 1300px) {
+	/*contacto*/
+    .no_mobile{
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width:600px)  {
+
+	.contact-no {
+        display: none;
+		height: auto;
+    }
+
+
+
+}
+
+
+
+/***estilos footer***/
+.redes_soc{
+	text-align: center;
+	font-size: 1.5vw;
+	font-weight: 400;
+	color: rgb(147, 149, 154);
+}
+.redes_soc:hover{
+	color: rgb(147, 149, 154)!important;
+	transition: .3s ease !important;
+}
+.footer_img{
+	text-align: center;
+}
+
+.social2:hover{
+	color: rgb(147, 149, 154) !important;
+	transition: .3s ease !important;
+}
+
+.titulo_pasos{
+	text-align: center;
+	font-size: 2vw;
+	font-weight: 800;
 }

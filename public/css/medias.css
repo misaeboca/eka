@@ -87,22 +87,35 @@
 
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 2000px) {
-
+         .sidenav > li >a{
+            font-size: 2vw;
+        }
     }
     @media only screen and (max-width : 1600px) {
-        
+         .sidenav > li >a{
+            font-size: 2vw;
+        }
     }
     @media only screen and (max-width : 1300px) {
-
+         .sidenav > li >a{
+            font-size: 2vw;
+        }
     }
     @media only screen and (max-width : 1200px) {
-
+         .sidenav > li >a{
+            font-size: 2vw;
+        }
     }
     @media only screen and (max-width : 1080px) {
-       
+       .sidenav > li >a{
+            font-size: 2vw;
+        }
 
     }
     @media only screen and (max-width : 1024px) {
+        .sidenav > li >a{
+            font-size: 2vw;
+        }
         
     }
 
@@ -113,7 +126,15 @@
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 992px) {
+        .venta{
+            text-align: left !important;
+        }
         /*INDEX*/
+        .foto_eka{
+            text-align: center;
+            width: 40%;
+            padding-top: 20%
+        }
         nav > a > #nav-logo {
             width: 20vw;
         }
@@ -576,65 +597,66 @@
             font-size: 7vw;
         }
         #form-paso-three > form > #subtotal {
-            width: 90vw;
+            width: 65vw;
         }
         #form-paso-three > form > #subtotal > div > div > h5 {
-            font-size: 3.5vw;
+            font-size: 2vw;
         }
         #form-paso-three > form > #subtotal > div > div > h5 > input{
-            font-size: 3.5vw;
+            font-size: 2vw !important;
         }
         #form-paso-three > form > #subtotal > div > div > p {
-            font-size: 3.5vw;
+            font-size: 2vw;
         }
         #form-paso-three > form > #subtotal > div > div > p > input{
-            font-size: 3.5vw;
+            font-size: 2vw;
         }
         #form-paso-three > form > #descuento {
-            width: 90vw;
+            width: 65vw;
         }
         #form-paso-three > form > #descuento > div > div > h5 {
             font-size: 4vw;
         }
         #form-paso-three > form > #descuento > div > div > h5 > input{
-            font-size: 4vw;
+            font-size: 2.5vw;
         }
         #form-paso-three > form > #descuento > div > div > p {
-            font-size: 3.5vw;
+            font-size: 2.5vw;
         }
         #form-paso-three > form > #descuento > div > div > p > input{
-            font-size: 3.5vw;
+            font-size: 2.5vw;
         }
         #form-paso-three > form > #total {
-            width: 90vw;
+            width: 65vw;
         }
         #form-paso-three > form > #total > div#lanzamiento > div > div > h5 {
-            font-size: 3vw;
+            font-size: 2.5vw;
         }
         #form-paso-three > form > #total > div#lanzamiento > div > div > p {
-            font-size: 3.5vw;
+            font-size: 2.5vw;
             line-height: 10vh;
         }
         #form-paso-three > form > #total > div#total-total > div > div > h5 {
-            font-size: 6vw;
+            font-size: 3vw;
         }
         #form-paso-three > form > #total > div#total-total > div > div > h5 > input{
-            font-size: 6vw;
+            font-size: 3vw;
         }
         #form-paso-three > form > #total > div#total-total > div > div > p {
-            font-size: 6vw;
+            font-size: 3vw;
             font-weight: 700;
         }
         #form-paso-three > form > #total > div#total-total > div > div > p > span > input{
-            font-size: 6vw;
+            font-size: 3vw;
             font-weight: 700;
         }
         #form-paso-three > form > #total > div#total-total > div > div > p.ahorro {
-            font-size: 4vw;
+            font-size: 2vw;
         }
         #form-paso-three > form > #total > div#total-total > div > div > p.ahorro > span > input{
-            font-size: 4vw;
+            font-size: 2vw;
         }
+    
 
     }
     @media only screen and (max-width : 768px) {
@@ -644,7 +666,7 @@
         }
         /*PASOS*/
         .sidenav li>a {
-            font-size: 4vw;
+            font-size: 3vw;
         }
         #steps > .step {
             height: 6vh;

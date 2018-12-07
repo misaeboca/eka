@@ -23,10 +23,11 @@
 				<div id="paso-two-articles">
 					<div class="row">
 						<?php foreach ($services as $service): ?>
+
 							    <div class="col s12 m12 l3">
-									<div class="paso-two-article z-depth-3">
+									<div class=" paso-two-article z-depth-3">
 										<input type="hidden" name="service_id" value="<?php echo $service->id; ?>">
-										<img src="<?php echo $service->image; ?>" alt="foto">
+										<img src="<?php echo $service->image; ?>" alt="foto" with="100px">
 										<h5><?php echo $service->name; ?></h5>
 										<a href="#<?php echo $service->modal_id; ?>" class="modal-trigger">conocer más</a>
 										<p><input type="text" name="services_price" id="cantidad_price_<?php echo $service->name; ?>" value="$ <?php echo $service->price; ?>" disabled></p>
@@ -40,18 +41,17 @@
 						<?php endforeach; ?>
 					</div>
 				</div>
-				<div id="btns">
-					<div class="row">
-						<div class="col s6 m6">
-							{{-- <button class="btn-custom-btn">REGRESAR</button> --}}
-							<a href="{{ url('paso-1') }}" class="btn-custom">REGRESAR</a>
-						</div>
-						<div class="col s6 m6">
-							<button class="btn-custom-btn">CONTINUAR</button>
-							{{-- <a href="{{ url('paso-3') }}" class="btn-custom">CONTINUAR</a> --}}
+				
+					<div class="row center">
+						<div class="col s12 m12 " >
+							<button class="btn-custom"><b>REGRESAR</b></button> 
+							{{-- <a href="{{ url('paso-1') }}" class="btn-custom">REGRESAR</a>--}}
+						
+							<button class="btn-custom"><b>CONTINUAR</b></button>
+							 {{--<a href="{{ url('paso-3') }}" class="btn-custom">CONTINUAR</a>--}}
 						</div>
 					</div>
-				</div>
+			
 
 			</form>
 

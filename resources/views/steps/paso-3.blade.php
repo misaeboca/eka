@@ -184,9 +184,10 @@
 						<?php } ?>
 					<?php endforeach; ?>
 				</div>
-				<div id="subtotal" class="z-depth-4">
+
+				<div id="subtotal" class="z-depth-4" >
 					<div class="row">
-						<div class="col s7 m6"><h5><input type="text" name="services_subtotal_cantidad" id="services_subtotal_cantidad" disabled></h5></div>
+						<div class="col s6 m6"><h5 style="font-size: 1.7vw"><input type="text" name="services_subtotal_cantidad" id="services_subtotal_cantidad" disabled ></h5></div>
 						<div class="col s5 m6"><p><input type="text" name="services_subtotal_price" id="services_subtotal_price" disabled></p></div>
 					</div>
 				</div>
@@ -204,19 +205,22 @@
 							</div>
 							<div class="col s6 m6 ">
 								<p><input type="text" name="services_total" id="services_total" disabled></p>
+								<h6>AHORRO : <span id="_ahorro"></span></h6>
 							</div>
+
 						</div>
 					</div>
 				</div>
+				
 				<div id="btns">
 					<div class="row">
-						<div class="col s6 m6">
-							{{-- <button class="btn-custom-btn">REGRESAR</button> --}}
-							<a href="{{ url('paso-1') }}" class="btn-custom">CANCELAR</a>
+						<div class="col s12 m6">
+							<button class="btn-custom"><b>REGRESAR</b></button> 
+							{{--<a href="{{ url('paso-1') }}" class="btn-custom"><b>CANCELAR</b></a>--}}
 						</div>
-						<div class="col s6 m6">
-							<button class="btn-custom-btn">ENVIAR</button>
-							{{-- <a href="{{ url('/') }}" class="btn-custom">CONTINUAR</a> --}}
+						<div class="col s12 m6">
+							<button class="btn-custom"><b>ENVIAR</b></button> 
+							{{-- <a href="{{ url('/') }}" class="btn-custom"><b>CONTINUAR</a></a>--}}
 						</div>
 					</div>
 				</div>
@@ -357,9 +361,9 @@
 				$("#services_discount").val(addCommas('-15% DE DESCUENTO'));
 			}
 			// Services Discount Price
-			if (services_subtotal_cantidad <= '3') {
+			if (services_subtotal_cantidad >= '3' && services_subtotal_cantidad < '6') {
 				$("#services_discount_price").val(addCommas('-$ ' + (services_total_price/100)*'5'));
-				var services_discount_porcentage = (services_total_price/100)*'5';
+				var services_discount_porcentage = 0; (services_total_price/100)*'5';
 
 			}else if(services_subtotal_cantidad <= '6') {
 				$("#services_discount_price").val(addCommas('-$ ' + (services_total_price/100)*'10'));
@@ -373,6 +377,8 @@
 			// Services Total
 			$("#services_total").val(addCommas('$ ' + (services_total_price - services_discount_porcentage)));
 			$("#process_total").val(addCommas('$ ' + (services_total_price - services_discount_porcentage)));
+
+			$('#_ahorro').text('$'+services_discount_porcentage)
 
 			function addCommas(nStr) {
 			    nStr += '';

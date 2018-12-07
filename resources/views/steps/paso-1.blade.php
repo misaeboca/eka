@@ -11,36 +11,42 @@
 			<p>PASO 1 DE 3</p>
 		</div>
 
-		<section id="form-paso-one">
-			<form action="{{ url('start-process') }}" method="post">
+	<div class="container">
+		<div class="row col">
+			<form class="" action="{{ url('start-process') }}" method="post">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-				<div class="paso-input">
-					<h5>¿CUÁL ES TU NOMBRE COMPLETO? *</h5>
+			    <div class="col s12  s12 m12 center">
+			    	<h5><b>¿CUÁL ES TU NOMBRE COMPLETO? *</b></h5>
 					<p>DE PREFERENCIA COMPLETO :)</p>
 					<input type="text" name="user_name" class="validate" required>
 					<span class="helper-text" data-error="Este campo es obligatorio" data-success=""></span>
-				</div>
-				<div class="row">
-					<div class="paso-input col s12 m12 l6">
-						<h5>TELÉFONO *</h5>
-						<p>SI, PUEDE QUE TE MANDEMOS WHATSAPP</p>
-						<input type="text" name="user_phone" class="validate" required>
-						<span class="helper-text" data-error="Este campo es obligatorio" data-success=""></span>
-					</div>
-					<div class="paso-input col s12 m12 l6">
-						<h5>MAIL *</h5>
-						<p>PARA ENVIARTE LA INFORMACIÓN</p>
-						<input type="email" name="user_email" class="validate" required>
-						<span class="helper-text" data-error="Este campo es obligatorio" data-success=""></span>
-					</div>
-				</div>
-				<div id="paraquien">
-					<h5>¿PARA QUIÉN ES EL PROYECTO?</h5>
+			    </div>
+
+			    <div class="col s12 s12 m12 l6  center ">
+			     	<br><br>
+			    	<h5><b>TELÉFONO *</b></h5>
+					<p>SI, PUEDE QUE TE MANDEMOS WHATSAPP</p>
+					<input type="text" name="user_phone" class="validate" required>
+					<span class="helper-text" data-error="Este campo es obligatorio" data-success=""></span>
+			    </div>
+
+			    <div class="col s12 s12 m12 l6 center">
+			     	<br><br>
+			    	<h5><b>MAIL *</b></h5>
+					<p>TU NOMBRE, O EL DE TU EMPRESA</p>
+					<input type="email" name="user_email" class="validate" required>
+					<span class="helper-text" data-error="Este campo es obligatorio" data-success=""></span>
+			    </div>
+
+			    <div class="col s12 s12 m12 center">
+			     	<br><br><br>
+			    	<h5><b>¿PARA QUIÉN ES EL PROYECTO?</b><br><br></h5>
+			    	<br><br>
 					<div class="row">
-						<div class="col s6 m4">
-							<img src="{{ URL::asset('images/pasos/personas-1.svg') }}" alt="personas">
-							<p>PERSONAL</p>
+					    <div class="col s12 m4 img_person">
+					    	<img src="{{ URL::asset('images/pasos/personas-1.svg') }}" alt="personas" width="100" height="100">
+							<p class="center">PERSONAL</p>
 							<div class="checkbox">
 								<p>
 							      <label>
@@ -49,9 +55,9 @@
 							      </label>
 							    </p>
 							</div>
-						</div>
-						<div class="col s6 m4">
-							<img src="{{ URL::asset('images/pasos/personas-2.svg') }}" alt="personas">
+					    </div>
+					    <div class="col s12 m4 ">
+					    	<img src="{{ URL::asset('images/pasos/personas-2.svg') }}" alt="personas" width="100" height="100px">
 							<p>STARTUP</p>
 							<div class="checkbox">
 								<p>
@@ -61,9 +67,9 @@
 							      </label>
 							    </p>
 							</div>
-						</div>
-						<div class="col s12 m4">
-							<img src="{{ URL::asset('images/pasos/personas-3.svg') }}" alt="personas">
+					    </div>
+					    <div class="col s12 m4 img_person">
+					    	<img src="{{ URL::asset('images/pasos/personas-3.svg') }}" alt="personas" width="100px" height="100px">
 							<p>EMPRESA</p>
 							<div class="checkbox">
 								<p>
@@ -73,138 +79,155 @@
 							      </label>
 							    </p>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="paso-input">
-					<h5>¿CUÁL ES EL NOMBRE DE TU EMPRESA? *</h5>
-					<p>EL DE TU EMPRESA</p>
+					    </div>
+					 </div>
+			    </div>
+
+			    <div class="col s12 s12 m12 center">
+			     	<br><br>
+			    	<h5><b>¿CUÁL ES EL NOMBRE DE TU EMPRESA? *</b></h5>
+					<p>PARA ENVIARTE LA INFORMACIÓN</p>
 					<input type="text" name="company_name" class="validate" required>
 					<span class="helper-text" data-error="Este campo es obligatorio" data-success=""></span>
-				</div>
-				<div class="paso-input">
-					<h5>¿CUÁL ES EL NOMBRE DE TU PROYECTO?</h5>
-					<p>EN CASO QUE NO SEA IGUAL AL DE TU EMPRESA. Y SI ES EL MISMO... PUES ESCRÍBELO DE NUEVO</p>
+			    </div>
+			    <div class="col s12 s12 m12 center">
+			     	<br><br>
+			    	<h5><b>¿CUÁL ES EL NOMBRE DE TU PROYECTO?</b></h5>
+					<p>EN CASO QUE NO SEA IGUAL A TU NOMBRE O TU EMPRESA. Y SI ES EL MISMO... PUES ESCRÍBELO DE NUEVO</p>
 					<input type="text" name="project_name">
-				</div>
-				<div class="paso-input">
-					<h5>¿TU PROYECTO ESTÁ ACTUALMENTE EN MARCHA?</h5>
-					<div class="row">
-						<div class="col s12 m12 l6">
-							<div class="paso-inputs-checkboxes">
-								<p>
-							      <label>
-							        <input name="project_state" value="YA TIENE TIEMPO FUNCIONANDO" type="checkbox" class="filled-in" />
-							        <span></span>
-							      </label>
-							    </p>
-							    <p>YA TIENE TIEMPO FUNCIONANDO</p>
-							</div>
-							<div class="paso-inputs-checkboxes">
-							    <p>¿CÚANTO TIEMPO?</p>
-								<input name="project_state_when_one" type="text">
-							</div>
-						</div>
-						<div class="col s12 m12 l6">
-							<div class="paso-inputs-checkboxes">
-								<p>
-							      <label>
-							        <input name="project_state" value="NO; PERO PRONTO LO LANZAREMOS" type="checkbox" class="filled-in" />
-							        <span></span>
-							      </label>
-							    </p>
-							    <p>NO, PERO PRONTO LO LANZAREMOS</p>
-							</div>
-							<div class="paso-inputs-checkboxes">
-							    <p>¿CÚANDO?</p>
-								<input name="project_state_when_two" type="text">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="paso-input more-margin">
-					<h5>¿CUÁL ES LA PRINCIPAL FUENTE DE INGRESO?</h5>
-					<div class="row">
-						<div class="col m6">
-							<div class="paso-inputs-checkboxes">
-								<p>
-							      <label>
-							        <input type="checkbox" name="project_income" value="VENTA ONLINE" class="filled-in" />
-							        <span></span>
-							      </label>
-							    </p>
-							    <p>VENTA ONLINE</p>
-							</div>
-						</div>
-						<div class="col m6">
-							<div class="paso-inputs-checkboxes">
-								<p>
-							      <label>
-							        <input type="checkbox" name="project_income" value="VENTA OFFLINE" class="filled-in" />
-							        <span></span>
-							      </label>
-							    </p>
-							    <p>VENTA OFFLINE</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="paso-input more-margin">
-					<h5>¿QUE TAN URGENTE ES TU PROYECTO?</h5>
-					<div class="row">
-						<div class="col s12 m12 l4">
-							<div class="paso-inputs-checkboxes">
-								<p>
-							      <label>
-							        <input type="checkbox" name="project_date" value="2 SEMANAS" class="filled-in" />
-							        <span></span>
-							      </label>
-							    </p>
-							    <p>2 SEMANAS</p>
-							</div>
-						</div>
-						<div class="col s12 m12 l4">
-							<div class="paso-inputs-checkboxes">
-								<p>
-							      <label>
-							        <input type="checkbox" name="project_date" value="3 SEMANAS" class="filled-in" />
-							        <span></span>
-							      </label>
-							    </p>
-							    <p>3 SEMANAS</p>
-							</div>
-						</div>
-						<div class="col s12 m12 l4">
-							<div class="paso-inputs-checkboxes">
-								<p>
-							      <label>
-							        <input type="checkbox" name="project_date" value="4 SEMANAS O MÁS" class="filled-in" />
-							        <span></span>
-							      </label>
-							    </p>
-							    <p>4 SEMANAS O MÁS</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="left-align paso-input more-margin" id="obligatorio">
-					<h5>* Obligatorio</h5>
-				</div>
-				<div id="btns">
-					<div class="row">
-						<div class="col s6 m6">
-							{{-- <button class="btn-custom-btn">REGRESAR</button> --}}
-							<a href="{{ url('/') }}" class="btn-custom">REGRESAR</a>
-						</div>
-						<div class="col s6 m6">
-							<button class="btn-custom-btn">CONTINUAR</button>
-							{{-- <a href="{{ url('paso-2') }}" class="btn-custom">CONTINUAR</a> --}}
-						</div>
-					</div>
-				</div>
+			    </div>
 
-			</form>
-		</section>
+			    <div class="col s12 s12 m12 center">
+			     	<br><br>
+			    	<h5><b>¿TU PROYECTO ESTÁ ACTUALMENTE EN MARCHA?</b></h5>
+					<p>EN CASO QUE NO SEA IGUAL A TU NOMBRE O TU EMPRESA. Y SI ES EL MISMO... PUES ESCRÍBELO DE NUEVO</p>
+					
+			    </div>
+			    <br><br>
+			    <div class="col s12  m6">
+			    	<br><br>
+			    	<div class="col s12 m12  paso-inputs-checkboxes">
+						<div class="paso-inputs-checkboxes">
+							<p>
+						      <label>
+
+						       <input name="project_state" value="YA TIENE TIEMPO FUNCIONANDO" type="checkbox" class="filled-in" />
+						        <span class="black-text" style="padding-left: 50px;padding-top: 5px">YA TIENE TIEMPO FUNCIONANDO</span>
+						      </label>
+						    </p>
+						</div>
+			    	</div>
+
+			    	<div class="col s12 m12">
+			    		<br>
+			    		<div class="col s6 m6">
+			    			<p>¿CÚANTO TIEMPO?</p>
+			    		</div>
+			    		 <div class="col s6 m6">
+			    		 	<input name="project_state_when_one" type="text">
+			    		 </div>
+			    	</div>
+			    </div>
+
+			    <div class="col s12 m6">
+			    	<br><br>
+			    	<div class="col s12 m12  paso-inputs-checkboxes">
+						<div class="paso-inputs-checkboxes">
+							<p>
+						      <label>
+
+						       <input name="project_state" value="YA TIENE TIEMPO FUNCIONANDO" type="checkbox" class="filled-in" />
+						        <span class="black-text" style="padding-left: 50px;padding-top: 5px">NO, PERO PRONTO LO LANZAREMOS</span>
+						      </label>
+						    </p>
+						</div>
+			    	</div>
+
+			    	<div class="col s12 m12">
+			    		<br>
+			    		<div class="col s6 m6">
+			    			<p>¿CÚANDO?</p>
+			    		</div>
+			    		<div class="col s6 m6">
+			    		 	<input name="project_state_when_two" type="text">
+			    		</div>
+			    	</div>
+			    </div>
+
+			    <div class="col s12 center ">
+			     	<br><br>
+			    	<h5><b>¿CUÁL ES LA PRINCIPAL FUENTE DE INGRESO?</b></h5>
+
+			    	<div class="col s12 m12 l6 venta">
+			    		<div class="paso-inputs-checkboxes">
+							<p>
+						      <label>
+						        <input type="checkbox" name="project_income" value="VENTA ONLINE" class="filled-in" />
+						        <span class="black-text mobile" style="padding-top: 5px; padding-left: 50px">VENTA ONLINE</span>
+						      </label>
+						    </p>
+						</div>
+			    	</div>
+			    	<div class="col s12 m12 l6 venta">
+			    		<div class="paso-inputs-checkboxes">
+							<p>
+						      <label>
+						        <input type="checkbox" name="project_income" value="VENTA OFFLINE" class="filled-in" />
+						        <span class="black-text mobile" style="padding-top: 5px; padding-left: 50px"> VENTA DE MOSTRADOR</span>
+						      </label>
+						    </p>
+						</div>
+			    	</div>
+			    </div>
+
+			    <div class="col s12 center">
+			     	<br><br>
+			    	<h5><b>¿QUE TAN URGENTE ES TU PROYECTO?</b></h5>
+			    	<div class="col s12 m4 16 venta">
+			    		<div class="paso-inputs-checkboxes">
+							<p>
+						      <label>
+						        <input type="checkbox" name="project_date" value="2 SEMANAS" class="filled-in" />
+						        <span class="black-text" style="padding-top: 5px; padding-left: 50px">2 SEMANAS</span>
+						      </label>
+						    </p>
+						</div>
+			    	</div>
+			    	<div class="col s12 m4 16 venta">
+			    		<div class="paso-inputs-checkboxes">
+							<p>
+						      <label>
+						        <input type="checkbox" name="project_date" value="3 SEMANAS" class="filled-in" />
+						        <span class="black-text" style="padding-top: 5px; padding-left: 50px">3 SEMANAS</span>
+						      </label>
+						    </p>
+						</div>
+			    	</div>
+			    	<div class="col s12 m4 16 venta">
+			    		<div class="paso-inputs-checkboxes">
+							<p>
+						      <label>
+						        <input type="checkbox" name="project_date" value="3 SEMANAS" class="filled-in" />
+						        <span class="black-text" style="padding-top: 5px; padding-left: 50px">4 SEMANAS O MÁS</span>
+						      </label>
+						    </p>
+						</div>
+			    	</div>
+			    </div>
+
+			    <div class="col s12 center">
+			    	<br><br>
+			    	<button class="btn-custom">REGRESAR</button>
+			    	<button class="btn-custom">CONTINUAR</button>
+			    </div>
+			   
+
+				</form>
+
+				<div class="col s1 m1"></div>
+		</div>
+	</div>
+
 
 @endsection
 @section('footer-class', 'servicio steps')

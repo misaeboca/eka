@@ -17,9 +17,9 @@
 				<p>
 					Su nombre, es una variación de la forma en la que se llama al gusano <br>
 					"magueyero" que vive dentro de las hojas del maguey. Con una<br>
-					imagen actual y que dificilmente pasará desapercibida. Magueyro<br>
-					no solo busca ser mostrada como una distribuidora en linea sino<br>
-					tambíen ser un referente en aaacesorios y productos relacionados<br>
+					imagen actual y que difícilmente pasará desapercibida. Magueyro<br>
+					no solo busca ser mostrada como una distribuidora en línea sino<br>
+					tambíen ser un referente en acesorios y productos relacionados<br>
 					con el consumo responsable del mezcal.<br>
 				</p>
 				<br>

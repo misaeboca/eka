@@ -45,34 +45,66 @@
 					</div>
 				</div>
 			</div>
-			<br><br>
-			<a href="http://ekastudio.net/new_project/public_html/paso-1" class="btn-custom">¡ARMA UN PLAN A TU MEDIDA AHORA MISMO!</a>
+			
+			<a href="{{ url('paso-1') }}" class="btn-custom">¡ARMA UN PLAN A TU MEDIDA AHORA MISMO!</a>
 	</section>
 
-	<br><br>
+
 	<section>
 		<div class="row col-12">
 			<div class="col s8 offset-s2 divider"></div>
 		</div>
 
-		<div id="social-media2">
-			<img src="{{ URL::asset('images/corona.svg') }}" alt="corona">
-			<div class="row">
-				<div class="col m4"><a href="https://www.facebook.com/ekastudio13/">
-					FACEBOOK
+		<div class="row" >
+
+	
+        	<div class="col s12 m12 footer_img">
+        		<img style="padding-top: 5vh;padding-bottom: 3vh" width="65px;"  src="{{ URL::asset('images/corona.svg') }}" alt="corona">
+        	</div>
+
+        	<div class="col l2 s12 "></div>
+        	<div class="row flow-text col l8 s12 m12 flow-text" style=" font-weight: 700;font-size: 1.2vw;">
+	        	 <div class="grid-example col s12 m4 redes_soc_r" style="text-align: right;font-weight: bold;">
+			      		<a class="black-text social2" href="https://www.facebook.com/ekastudio13/">
+						FACEBOOK
+						</a>
+			      </div>
+			      <div class="grid-example col s12 m4 " style="text-align: center;font-weight: bold;">
+			      		<a class="black-text social2" href="https://www.instagram.com/eka.studio/?hl=en">
+						INSTAGRAM
+			      </div>
+			       <div class="grid-example col s12 m4 redes_soc_l" style="text-align: left; font-weight: bold;">
+			      	<a class="black-text social2" href="https://www.linkedin.com/company/eka-studio/">
+						LINKEDIN
 					</a>
+			      </div>
+			     
+			      <div class="col s12 m12 " style="text-align: center; font-weight: bold;">
+					<span class="red-text" style="font-size: 18px">ENVÍANOS TUS PREGUNTAS A HELLO@EKASTUDIO.NET</span>
+			      </div>
+		    </div>
+			<!--<img src="{{ URL::asset('images/corona.svg') }}" alt="corona">
+			<div class="row ">
+				<div class="col-12">
+					<div class="col s1 m1 "></div>
+					<div class="col s3  m3"><a href="https://www.facebook.com/ekastudio13/">
+						FACEBOOK
+						</a>
+					</div>
+					<div class="col s4 m4"><a href="https://www.instagram.com/eka.studio/?hl=en">
+						INSTAGRAM
+					</a></div>
+					<div class="col s3 m3"><a href="https://www.linkedin.com/company/eka-studio/">
+						LINKEDIN
+					</a></div>
+					<div class="col s1 m1 "></div>
+					<br>
+					<div class="col s12 m12 "><a href="a">
+						<h6 class="color-contact">ENVÍANOS TUS PREGUNTAS A HELLO@EKASTUDIO.NET</h6>
+					</a>
+					</div>
 				</div>
-				<div class="col m4"><a href="https://www.instagram.com/eka.studio/?hl=en">
-					INSTAGRAM
-				</a></div>
-				<div class="col m4"><a href="https://www.linkedin.com/company/eka-studio/">
-					LINKEDIN
-				</a></div>
-				<br>
-				<div class="col m12 "><a href="a">
-					<h6 class="color-contact">ENVÍANOS TUS PREGUNTAS A HELLO@EKASTUDIO.NET</h6>
-				</a></div>
-			</div>
+			</div>-->
 		</div>
 		<div class="row col-12">
 			<div class="col s8 offset-s2 divider"></div>
@@ -96,8 +128,8 @@
 			<div id="descuentos_arma-tu-plan" class="z-depth-4">
 				<h5>ARMA <br>TU PLAN</h5>
 				<div id="arma-tu-plan-planes">
-					<div class="arma-tu-plan_plan">
-						<div class="arma-tu-plan_plan-img imagen_descuento"><img src="images/index/arma-tu-plan-1.svg" alt="arma-tu-plan-icon"></div>
+					<div class="arma-tu-plan_plan ">
+						<div class="arma-tu-plan_plan-img imagen_descuento" ><img src="images/index/arma-tu-plan-1.svg" alt="arma-tu-plan-icon"></div>
 						<div class="arma-tu-plan_plan-checkbox">
 							<img src="images/index/checkbox_check.svg" alt="checkbox_check">
 						</div>
@@ -169,53 +201,70 @@
 				</div>
 			</div>
 	</section>
-
+	<br><br><br>
 	<section id="otras_opciones">
 			<h4>OTRAS OPCIONES CON DESCUENTO</h4>
 			<h5>SIGUE LOS PASOS PARA TENER TU PRESUPUESTO</h5>
 			<div class="row">
 				<div class="col s12 m12 l6">
-					<div class="opcion z-depth-4">
+					<div class="opcion mobile z-depth-4">
 						<h5>SOLO LOGO</h5>
-						<img src="images/index/arma-tu-plan-1.svg" alt="opcion">
-						<a href="http://ekastudio.net/new_project/public_html/paso-1" class="btn-custom">INICIAR</a>
-						
+						<img src="{{ URL::asset('images/index/arma-tu-plan-1.svg') }}" alt="opcion">
+						<a href="{{ url('paso-1') }}" class="btn-custom">INICIAR</a>
+						<h4>-5% DE DESCUENTO</h4>
 					</div>
 				</div>
 				<div class="col s12 m12 l6">
-					<div class="opcion opcion-dos z-depth-4">
+					<div class="opcion mobile opcion-dos z-depth-4">
 						<h5>LOGO + 3 APLICACIONES</h5>
-						<img src="images/index/arma-tu-plan-1.svg" alt="opcion">
-						<img src="images/index/arma-tu-plan-3.png" alt="opcion">
-						<a href="http://ekastudio.net/new_project/public_html/paso-1" class="btn-custom"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INICIAR</font></font></a>
+						<img src="{{ URL::asset('images/index/arma-tu-plan-1.svg') }}" alt="opcion">
+						<img src="{{ URL::asset('images/index/arma-tu-plan-3.png') }}" alt="opcion">
+						<a href="{{ url('paso-1') }}" class="btn-custom">INICIAR</a>
+						<h4>-10% DE DESCUENTO</h4>
+					</div>
+				</div>
+				<div class="col s12 m12 l6">
+					<div class="opcion sip z-depth-4">
+						<h5>SOLO LOGO</h5>
+						<img src="{{ URL::asset('images/index/arma-tu-plan-1.svg') }}" alt="opcion">
+						<a href="{{ url('paso-1') }}" class="btn-custom">INICIAR</a>
 						<h4>-5% DE DESCUENTO</h4>
+					</div>
+				</div>
+				<div class="col s12 m12 l6">
+					<div class="opcion sip opcion-dos z-depth-4">
+						<h5>LOGO + 3 APLICACIONES</h5>
+						<img src="{{ URL::asset('images/index/arma-tu-plan-1.svg') }}" alt="opcion">
+						<img src="{{ URL::asset('images/index/arma-tu-plan-3.png') }}" alt="opcion">
+						<a href="{{ url('paso-1') }}" class="btn-custom">INICIAR</a>
+						<h4>-10% DE DESCUENTO</h4>
 					</div>
 				</div>
 				<div class="col s12 m12 l6">
 					<div class="opcion mobile opcion-tres z-depth-4">
 						<h5>LOGO + APLICACIONES + WEBSITE</h5>
-						<a href="http://ekastudio.net/new_project/public_html/paso-1" class="btn-custom">INICIAR</a>
+						<a href="{{ url('paso-1') }}" class="btn-custom">INICIAR</a>
 						<h4>-15% DE DESCUENTO</h4>
 					</div>
 				</div>
 			</div>
 			<div class="opcion opcion-tres z-depth-4">
 				<h5>LOGO + APLICACIONES + WEBSITE</h5>
-				<img src="images/index/arma-tu-plan-1.svg" alt="opcion">
-				<img src="images/index/arma-tu-plan-2.png" alt="opcion">
-				<img src="images/index/arma-tu-plan-5.png" alt="opcion">
-				<br><br>
-				<a href="http://ekastudio.net/new_project/public_html/paso-1" class="btn-custom"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INICIAR</font></font></a>
+				<img src="{{ URL::asset('images/index/arma-tu-plan-1.svg') }}" alt="opcion">
+				<img src="{{ URL::asset('images/index/arma-tu-plan-2.png') }}" alt="opcion">
+				<img src="{{ URL::asset('images/index/arma-tu-plan-5.png') }}" alt="opcion">
+				<a href="{{ url('paso-1') }}" class="btn-custom">INICIAR</a>
 				<h4>-15% DE DESCUENTO</h4>
 			</div>
+			<br>
 			<div id="especifico">
 				<h5>¿BUSCAS ALGO MÁS ESPECÍFICO?</h5>
 				<h4>¡ARMA TU PLAN A MEDIDA!</h4>
-				<br><br><br>
-				<a href="http://ekastudio.net/new_project/public_html/paso-1" class="btn-custom">CONTINUAR</a>
-				<a href="http://ekastudio.net/new_project/public_html/paso-1" class="btn-custom mobile">QUIERO INICIAR</a>
+				<br>
+				<a href="{{ url('paso-1') }}" class="btn-custom">CONTINUAR</a>
+				<a href="{{ url('paso-1') }}" class="btn-custom mobile">QUIERO INICIAR</a>
 			</div>
 		</section>
-
+<br>
 @endsection
 @section('footer-class', 'index')

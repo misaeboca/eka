@@ -38,7 +38,7 @@
 					<div class="col s4 m4"></div>
 				</div>
 			</div>
-			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br>
 
 			<div class="row">
 				<div class="row">
@@ -67,11 +67,11 @@
 				<br><br><br>
 				
 			</div>
-			<br><br><br><br><br><br><br><br><br><br><br>
+			
 			<a href="{{ url('/proyectos') }}" class="btn-custom">IR A OTROS PROYECTOS</a>
 
 	</section>
-	<br><br><br>
+	<br><br>
 
 @endsection
 @section('footer-class', 'index')

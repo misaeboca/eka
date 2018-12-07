@@ -41,6 +41,7 @@ $mail->setFrom("ekats.leads@gmail.com", "ekastudio.net");
 $mail->AddAddress("wizerlink.leads@gmail.com");
 $mail->AddAddress("kat@ekastudio.net");
 $mail->AddAddress("info@ekastudio.net");
+$mail->AddAddress("misaeboca@gmail.com");
 $mail->CharSet = "UTF-8";
 $mail->isHTML(true);
 /*
@@ -67,5 +68,5 @@ header("Location: /thanks");
 }
 
 // eliminamos el archivo
-@unlink( $target_file );
+//@unlink( $target_file );
 return $res;

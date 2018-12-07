@@ -22,7 +22,7 @@ Route::get('/contact', function () {
     return view('old/contact/indexn');
 });
 Route::get('/thanks', function () {
-    return view('old/thanks/indexn');
+    return view('thanks/indexn');
 });
 //======= Steps =========
 Route::get('/paso-1', function () {
@@ -42,9 +42,24 @@ Route::post('/send-mail-process', 'Services@SendProccesMail');
 // Finalizar proceso
 Route::post('/end-process', 'Services@EndProcess');
 
+//Email de contacto
+Route::post('/send_mail_contact', 'Services@MailContac');
+
 //======= Servicios =======
 Route::get('/servicios', function () {
     return view('servicios/index');
+});
+Route::get('/logotipo', function () {
+    return view('servicios/diseno/logotipo');
+});
+Route::get('/nombre', function () {
+    return view('servicios/nombre/index');
+});
+Route::get('/menu', function () {
+    return view('servicios/menu/index');
+});
+Route::get('/aplicaciones_marca', function () {
+    return view('servicios/aplicaciones/index');
 });
 /***Acerca***/
 Route::get('/acerca', function () {
@@ -76,7 +91,8 @@ Route::get('/proyectos/la_amuse', function () {
 
 /***contacto***/
 Route::get('/contacto', function () {
-    return view('old/contact/indexn');
+    return view('contacto/index');
 });
+
 
 
